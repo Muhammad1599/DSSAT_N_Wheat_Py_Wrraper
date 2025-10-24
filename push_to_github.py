@@ -44,18 +44,27 @@ def push_to_github():
             print("Committing changes...")
             repo.git.commit(m="Initial commit: Add all project files")
         
+        # Create branch if it doesn't exist
+        try:
+            repo.git.checkout("-b", "main")
+            print("Created 'main' branch")
+        except:
+            pass
+        
         # Push to GitHub
         print("Pushing to GitHub...")
         repo.git.push("origin", "main", force=True)
         
-        print("✓ Successfully pushed to GitHub!")
+        print("Successfully pushed to GitHub!")
         
     except git.GitCommandError as e:
         print(f"Git error: {e}")
         print("\nTrying to push to master branch instead...")
         try:
+            repo.git.checkout("-b", "master")
+            print("Created 'master' branch")
             repo.git.push("origin", "master", force=True)
-            print("✓ Successfully pushed to GitHub!")
+            print("Successfully pushed to GitHub!")
         except Exception as e2:
             print(f"Error: {e2}")
             sys.exit(1)
