@@ -1,0 +1,199 @@
+*WARNING DETAIL FILE
+
+******************************************************************************
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:05
+
+*RUN   1        : DRYLAND  - 0 KG N/HA      CSCER048 KSAS8101    1
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  1   : DRYLAND  - 0 KG N/HA      CSCER048
+  
+
+ IPSOIL  YEAR DOY =    0   0
+ Saturated hydraulic conductivity equal to zero for one or more soil layers.   
+ Data will be treated as missing.                                              
+
+ IPWTH   YEAR DOY = 1981 334
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8101.WTH                                                                  
+ Line       66                                                                 
+ SRAD =   0.70 MJ.m-2.d-1                                                      
+
+ IPWTH   YEAR DOY = 1981 350
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8101.WTH                                                                  
+ Line       82                                                                 
+ SRAD =   0.70 MJ.m-2.d-1                                                      
+
+ IPWTH   YEAR DOY = 1982  62
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8201.WTH                                                                  
+ Line       67                                                                 
+ SRAD =   0.80 MJ.m-2.d-1                                                      
+
+******************************************************************************
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:06
+
+*RUN   2        : DRYLAND  - 60 KG N/HA     CSCER048 KSAS8101    2
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  2   : DRYLAND  - 60 KG N/HA     CSCER048
+  
+
+ IPSOIL  YEAR DOY =    0   0
+ Saturated hydraulic conductivity equal to zero for one or more soil layers.   
+ Data will be treated as missing.                                              
+
+ IPWTH   YEAR DOY = 1981 334
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8101.WTH                                                                  
+ Line       66                                                                 
+ SRAD =   0.70 MJ.m-2.d-1                                                      
+
+ IPWTH   YEAR DOY = 1981 350
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8101.WTH                                                                  
+ Line       82                                                                 
+ SRAD =   0.70 MJ.m-2.d-1                                                      
+
+ IPWTH   YEAR DOY = 1982  62
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8201.WTH                                                                  
+ Line       67                                                                 
+ SRAD =   0.80 MJ.m-2.d-1                                                      
+
+******************************************************************************
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:06
+
+*RUN   3        : DRYLAND  - 180 KG N/HA SP CSCER048 KSAS8101    3
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  3   : DRYLAND  - 180 KG N/HA SP CSCER048
+  
+
+ IPSOIL  YEAR DOY =    0   0
+ Saturated hydraulic conductivity equal to zero for one or more soil layers.   
+ Data will be treated as missing.                                              
+
+ IPWTH   YEAR DOY = 1981 334
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8101.WTH                                                                  
+ Line       66                                                                 
+ SRAD =   0.70 MJ.m-2.d-1                                                      
+
+ IPWTH   YEAR DOY = 1981 350
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8101.WTH                                                                  
+ Line       82                                                                 
+ SRAD =   0.70 MJ.m-2.d-1                                                      
+
+ IPWTH   YEAR DOY = 1982  62
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8201.WTH                                                                  
+ Line       67                                                                 
+ SRAD =   0.80 MJ.m-2.d-1                                                      
+
+******************************************************************************
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:06
+
+*RUN   4        : IRRIGATED - 0 KG N/HA     CSCER048 KSAS8101    4
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  4   : IRRIGATED - 0 KG N/HA     CSCER048
+  
+
+ IPSOIL  YEAR DOY =    0   0
+ Saturated hydraulic conductivity equal to zero for one or more soil layers.   
+ Data will be treated as missing.                                              
+
+ IPWTH   YEAR DOY = 1981 334
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8101.WTH                                                                  
+ Line       66                                                                 
+ SRAD =   0.70 MJ.m-2.d-1                                                      
+
+ IPWTH   YEAR DOY = 1981 350
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8101.WTH                                                                  
+ Line       82                                                                 
+ SRAD =   0.70 MJ.m-2.d-1                                                      
+
+ IPWTH   YEAR DOY = 1982  62
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8201.WTH                                                                  
+ Line       67                                                                 
+ SRAD =   0.80 MJ.m-2.d-1                                                      
+
+******************************************************************************
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:06
+
+*RUN   5        : IRRIGATED - 60 KG N/HA    CSCER048 KSAS8101    5
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  5   : IRRIGATED - 60 KG N/HA    CSCER048
+  
+
+ IPSOIL  YEAR DOY =    0   0
+ Saturated hydraulic conductivity equal to zero for one or more soil layers.   
+ Data will be treated as missing.                                              
+
+ IPWTH   YEAR DOY = 1981 334
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8101.WTH                                                                  
+ Line       66                                                                 
+ SRAD =   0.70 MJ.m-2.d-1                                                      
+
+ IPWTH   YEAR DOY = 1981 350
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8101.WTH                                                                  
+ Line       82                                                                 
+ SRAD =   0.70 MJ.m-2.d-1                                                      
+
+ IPWTH   YEAR DOY = 1982  62
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8201.WTH                                                                  
+ Line       67                                                                 
+ SRAD =   0.80 MJ.m-2.d-1                                                      
+
+******************************************************************************
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:07
+
+*RUN   6        : IRRIGATED 180 KG N/HA SPL CSCER048 KSAS8101    6
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  6   : IRRIGATED 180 KG N/HA SPL CSCER048
+  
+
+ IPSOIL  YEAR DOY =    0   0
+ Saturated hydraulic conductivity equal to zero for one or more soil layers.   
+ Data will be treated as missing.                                              
+
+ IPWTH   YEAR DOY = 1981 334
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8101.WTH                                                                  
+ Line       66                                                                 
+ SRAD =   0.70 MJ.m-2.d-1                                                      
+
+ IPWTH   YEAR DOY = 1981 350
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8101.WTH                                                                  
+ Line       82                                                                 
+ SRAD =   0.70 MJ.m-2.d-1                                                      
+
+ IPWTH   YEAR DOY = 1982  62
+ Warning: SRAD < 1 MJ.m-2.d-1.                                                 
+ KSAS8201.WTH                                                                  
+ Line       67                                                                 
+ SRAD =   0.80 MJ.m-2.d-1                                                      

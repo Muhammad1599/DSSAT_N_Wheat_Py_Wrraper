@@ -1,0 +1,63 @@
+GENOTYPE COEFFICIENT RULES FILE
+
+------------------SOYBEAN------------------
+
+SBGRO P _________Phenology_________:
+SBGRO P Onset of flowering (day)[ADAP]: CSDL,EM-FL
+SBGRO P First pod (day)[PD1P]:
+SBGRO P First seed (day)[PDFP]: FL-SD
+SBGRO P Physiological maturity (day)[MDAP]: SD-PM
+
+SBGRO G _________Growth_________:
+SBGRO G Biomass[CWAM]: LFMAX 
+SBGRO G Leaf area index[LAID]: FL-LF,SLAVR   
+SBGRO G HWUM(WT/SEED):WTPSD
+SBGRO G HWAM(SEED YIELD):SFDUR 
+SBGRO G H#AM(SEED NO):PODUR
+SBGRO G HWAM(SEED YIELD):SFDUR,LFMAX
+
+------------------MAIZE------------------
+MZCER P _________Phenology_________:
+MZCER P FLOWERING[ADAP]:P1,P2,PHINT
+
+MZCER G _________Growth_________:
+MZCER G L#SM(LEAF NO):PHINT 
+MZCER G MDAP(MATURITY):P5
+MZCER G HWAM(GRAIN YLD):G2,G3
+
+
+ 
+-------CROPSIM-CERES-WHEAT------------------
+WHCER P _________Phenology_________:
+WHCER P FLOWERING[ADAP]: P1V,P1D
+WHCER P Physiological maturity (day)[MDAP]: P5
+
+WHCER G _________Growth_________:
+WHCER G LEAF NO: PHINT 
+WHCER G Grain yield: G1, G2, G3
+
+
+
+-------CSCRP-WHEAT--------------------------
+WHCRP P _________Phenology_________:
+WHCRP P FLOWERING[ADAP]:VREQ, PPS1, VEFF
+WHCRP P Physiological maturity (day)[MDAP]: P8
+
+WHCRP G _________Growth_________:
+WHCRP G LEAF NO: PHINT
+WHCRP G Tiller NO: SHWTS
+WHCRP G Leaf area: LA1S, LAFV, LAFR
+WHCRP G Kernel NO: G#WTS
+WHCRP G Kernel weight: GWTS 
+WHCRP G Grain yield: G#WTS
+
+
+
+-------NWHEAT-WHEAT--------------------------
+WHAPS P _________Phenology_________:
+WHAPS P FLOWERING[ADAP]:VSEN, PPSEN, P1
+WHAPS P Physiological maturity (day)[MDAP]: P5
+
+WHAPS G _________Growth_________:
+WHAPS G LEAF NO: PHINT 
+WHAPS G add additional here based on label and space format!

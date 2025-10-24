@@ -1,0 +1,269 @@
+$LEAF SIZES
+
+*RUN 1    :TUDU1501WH 1 Duernast 2015 S CSCER048                             
+
+! LEAF NUMBER    8.2
+! LEAF NUMBER WHEN INCREASE FACTOR CHANGED   4.1
+! AREA OF LEAF WHEN FACTOR CHANGED   7.32
+
+@ LNUM AREAP AREA1 AREAT AREAS  T#PL  T#AL  WFLF  NFLF  AFLF  TFLF DAYSG
+     1   5.0   2.9   2.9   2.9   1.0   375   0.0   0.1   0.0   0.5  12.0
+     2   5.5   3.6   3.6   3.6   1.0   375   0.2   0.2   0.0   0.2   7.0
+     3   6.1   2.9   2.9   2.9   1.0   375   0.3   0.3   0.0   0.1  12.0
+     4   6.7   5.5   5.5   5.5   1.0   375   0.0   0.1   0.0   0.1  10.0
+     5   7.3   7.2   7.4   7.4   1.3   473   0.0   0.0   0.0   0.0   8.0
+     6  11.3  11.2  15.0  15.0   1.6   602   0.0   0.0   0.0   0.0   9.0
+     7  17.6  16.8  25.0  25.0   1.6   602   0.0   0.0   0.0   0.0  10.0
+     8  27.3  19.2  28.5  28.1   1.6   602   0.0   0.3   0.0   0.1   5.0
+     9  42.3   4.5   6.7   0.0   1.6   602   0.0   0.4   0.4   0.1   1.0
+  
+! LNUM  = Number of leaf on main axis
+! AREAP = Potential area of leaf (cm2)
+! AREA1 = Area of leaf on main axis (cm2)
+! AREAT = Area of leaves on all axes at leaf position (cm2) 
+! AREAS = Area of leaves senesced at leaf position (cm2)
+! T#PL  = Tiller number/plant at leaf position
+! T#AL  = Tiller number/area(m2) at leaf position
+! WFLF  = Water stress factor for leaf (0-1,0=0 stress)
+! NFLF  = N stress factor for leaf (0-1,0=0 stress)
+! AFLF  = Assimilate factor for leaf (0-1,0=0 no limitation)
+! TFLF  = Temperature factor for leaf (0-1,1=0 no limitation)
+! DAYSG = Number of days of growth   
+
+*RUN 2    :TUDU1501WH 2 Duernast 2015 S CSCER048                             
+
+! LEAF NUMBER    8.2
+! LEAF NUMBER WHEN INCREASE FACTOR CHANGED   4.1
+! AREA OF LEAF WHEN FACTOR CHANGED   7.32
+
+@ LNUM AREAP AREA1 AREAT AREAS  T#PL  T#AL  WFLF  NFLF  AFLF  TFLF DAYSG
+     1   5.0   2.9   2.9   2.9   1.0   375   0.0   0.1   0.0   0.5  12.0
+     2   5.5   3.7   3.7   3.7   1.0   375   0.2   0.2   0.0   0.2   7.0
+     3   6.1   3.0   3.0   3.0   1.0   375   0.2   0.3   0.0   0.1  12.0
+     4   6.7   5.8   5.8   5.8   1.0   375   0.0   0.1   0.0   0.1  10.0
+     5   7.3   7.3   7.5   7.5   1.3   473   0.0   0.0   0.0   0.0   8.0
+     6  11.3  11.2  15.0  15.0   1.6   602   0.0   0.0   0.0   0.0   9.0
+     7  17.6  17.1  25.4  25.4   1.6   602   0.0   0.0   0.0   0.0  10.0
+     8  27.3  19.9  29.6  29.3   1.6   602   0.0   0.3   0.0   0.1   5.0
+     9  42.3   4.6   6.9   0.0   1.6   602   0.0   0.4   0.4   0.1   1.0
+
+*RUN 3    :TUDU1501WH 3 Duernast 2015 S CSCER048                             
+
+! LEAF NUMBER    8.2
+! LEAF NUMBER WHEN INCREASE FACTOR CHANGED   4.1
+! AREA OF LEAF WHEN FACTOR CHANGED   7.32
+
+@ LNUM AREAP AREA1 AREAT AREAS  T#PL  T#AL  WFLF  NFLF  AFLF  TFLF DAYSG
+     1   5.0   2.9   2.9   2.9   1.0   375   0.0   0.1   0.0   0.5  12.0
+     2   5.5   3.1   3.1   3.1   1.0   375   0.1   0.3   0.0   0.2   7.0
+     3   6.1   2.4   2.4   2.4   1.0   375   0.1   0.6   0.0   0.1  12.0
+     4   6.7   3.4   3.4   3.4   1.0   375   0.0   0.5   0.0   0.1  10.0
+     5   7.3   3.7   3.7   3.7   1.1   423   0.0   0.5   0.0   0.0   8.0
+     6  11.3   5.2   6.0   6.0   1.3   483   0.0   0.5   0.0   0.0   9.0
+     7  17.6   7.2   8.9   8.9   1.3   482   0.0   0.6   0.0   0.0  10.0
+     8  27.3   9.0  11.0   9.1   1.3   482   0.0   0.7   0.2   0.1   5.0
+     9  42.3   2.3   2.8   0.0   1.3   480   0.0   0.7   0.6   0.1   1.0
+
+*RUN 4    :TUDU1501WH 4 Duernast 2015 S CSCER048                             
+
+! LEAF NUMBER    8.2
+! LEAF NUMBER WHEN INCREASE FACTOR CHANGED   4.1
+! AREA OF LEAF WHEN FACTOR CHANGED   7.32
+
+@ LNUM AREAP AREA1 AREAT AREAS  T#PL  T#AL  WFLF  NFLF  AFLF  TFLF DAYSG
+     1   5.0   2.9   2.9   2.9   1.0   375   0.0   0.1   0.0   0.5  12.0
+     2   5.5   3.7   3.7   3.7   1.0   375   0.2   0.2   0.0   0.2   7.0
+     3   6.1   3.0   3.0   3.0   1.0   375   0.2   0.3   0.0   0.1  12.0
+     4   6.7   5.8   5.8   5.8   1.0   375   0.0   0.1   0.0   0.1  10.0
+     5   7.3   7.3   7.5   7.5   1.3   473   0.0   0.0   0.0   0.0   8.0
+     6  11.3  11.2  15.0  15.0   1.6   602   0.0   0.0   0.0   0.0   9.0
+     7  17.6  17.1  25.3  25.3   1.6   602   0.0   0.0   0.0   0.0  10.0
+     8  27.3  19.7  29.3  29.0   1.6   602   0.0   0.3   0.0   0.1   5.0
+     9  42.3   4.6   6.8   0.0   1.6   602   0.0   0.4   0.4   0.1   1.0
+
+*RUN 5    :TUDU1501WH 5 Duernast 2015 S CSCER048                             
+
+! LEAF NUMBER    8.2
+! LEAF NUMBER WHEN INCREASE FACTOR CHANGED   4.1
+! AREA OF LEAF WHEN FACTOR CHANGED   7.32
+
+@ LNUM AREAP AREA1 AREAT AREAS  T#PL  T#AL  WFLF  NFLF  AFLF  TFLF DAYSG
+     1   5.0   2.9   2.9   2.9   1.0   375   0.0   0.1   0.0   0.5  12.0
+     2   5.5   3.7   3.7   3.7   1.0   375   0.2   0.2   0.0   0.2   7.0
+     3   6.1   3.0   3.0   3.0   1.0   375   0.2   0.3   0.0   0.1  12.0
+     4   6.7   5.8   5.8   5.8   1.0   375   0.0   0.1   0.0   0.1  10.0
+     5   7.3   7.3   7.5   7.5   1.3   473   0.0   0.0   0.0   0.0   8.0
+     6  11.3  11.2  15.0  15.0   1.6   602   0.0   0.0   0.0   0.0   9.0
+     7  17.6  17.5  25.9  25.9   1.6   602   0.0   0.0   0.0   0.0  10.0
+     8  27.3  23.4  34.7  34.7   1.6   602   0.0   0.1   0.0   0.1   5.0
+     9  42.3   5.6   8.3   0.6   1.6   602   0.0   0.2   0.4   0.1   1.0
+
+*RUN 6    :TUDU1501WH 6 Duernast 2015 S CSCER048                             
+
+! LEAF NUMBER    8.2
+! LEAF NUMBER WHEN INCREASE FACTOR CHANGED   4.1
+! AREA OF LEAF WHEN FACTOR CHANGED   7.32
+
+@ LNUM AREAP AREA1 AREAT AREAS  T#PL  T#AL  WFLF  NFLF  AFLF  TFLF DAYSG
+     1   5.0   2.9   2.9   2.9   1.0   375   0.0   0.1   0.0   0.5  12.0
+     2   5.5   3.7   3.7   3.7   1.0   375   0.2   0.2   0.0   0.2   7.0
+     3   6.1   3.0   3.0   3.0   1.0   375   0.2   0.3   0.0   0.1  12.0
+     4   6.7   5.7   5.7   5.7   1.0   375   0.0   0.1   0.0   0.1  10.0
+     5   7.3   7.2   7.4   7.4   1.3   473   0.0   0.0   0.0   0.0   8.0
+     6  11.3  11.2  15.0  15.0   1.6   602   0.0   0.0   0.0   0.0   9.0
+     7  17.6  16.8  24.9  24.9   1.6   602   0.0   0.0   0.0   0.0  10.0
+     8  27.3  19.1  28.3  28.0   1.6   602   0.0   0.3   0.0   0.1   5.0
+     9  42.3   4.5   6.6   0.0   1.6   602   0.0   0.4   0.4   0.1   1.0
+
+*RUN 7    :TUDU1501WH 7 Duernast 2015 S CSCER048                             
+
+! LEAF NUMBER    8.2
+! LEAF NUMBER WHEN INCREASE FACTOR CHANGED   4.1
+! AREA OF LEAF WHEN FACTOR CHANGED   7.32
+
+@ LNUM AREAP AREA1 AREAT AREAS  T#PL  T#AL  WFLF  NFLF  AFLF  TFLF DAYSG
+     1   5.0   2.9   2.9   2.9   1.0   375   0.0   0.1   0.0   0.5  12.0
+     2   5.5   3.8   3.8   3.8   1.0   375   0.2   0.2   0.0   0.2   7.0
+     3   6.1   3.1   3.1   3.1   1.0   375   0.2   0.3   0.0   0.1  12.0
+     4   6.7   5.8   5.8   5.8   1.0   375   0.0   0.1   0.0   0.1  10.0
+     5   7.3   7.3   7.5   7.5   1.3   473   0.0   0.0   0.0   0.0   8.0
+     6  11.3  11.2  15.0  15.0   1.6   602   0.0   0.0   0.0   0.0   9.0
+     7  17.6  17.5  25.9  25.9   1.6   602   0.0   0.0   0.0   0.0  10.0
+     8  27.3  23.5  34.9  34.9   1.6   602   0.0   0.1   0.0   0.1   5.0
+     9  42.3   5.6   8.3   0.6   1.6   602   0.0   0.2   0.4   0.1   1.0
+
+*RUN 8    :TUDU1501WH 8 Duernast 2015 S CSCER048                             
+
+! LEAF NUMBER    8.2
+! LEAF NUMBER WHEN INCREASE FACTOR CHANGED   4.1
+! AREA OF LEAF WHEN FACTOR CHANGED   7.32
+
+@ LNUM AREAP AREA1 AREAT AREAS  T#PL  T#AL  WFLF  NFLF  AFLF  TFLF DAYSG
+     1   5.0   2.9   2.9   2.9   1.0   375   0.0   0.1   0.0   0.5  12.0
+     2   5.5   3.7   3.7   3.7   1.0   375   0.2   0.2   0.0   0.2   7.0
+     3   6.1   3.0   3.0   3.0   1.0   375   0.2   0.3   0.0   0.1  12.0
+     4   6.7   5.8   5.8   5.8   1.0   375   0.0   0.1   0.0   0.1  10.0
+     5   7.3   7.3   7.4   7.4   1.3   473   0.0   0.0   0.0   0.0   8.0
+     6  11.3  11.2  15.0  15.0   1.6   602   0.0   0.0   0.0   0.0   9.0
+     7  17.6  17.5  25.9  25.9   1.6   602   0.0   0.0   0.0   0.0  10.0
+     8  27.3  24.3  36.1  36.1   1.6   602   0.0   0.1   0.0   0.1   5.0
+     9  42.3   5.9   8.8   0.9   1.6   602   0.0   0.2   0.4   0.1   1.0
+
+*RUN 9    :TUDU1501WH 9 Duernast 2015 S CSCER048                             
+
+! LEAF NUMBER    8.2
+! LEAF NUMBER WHEN INCREASE FACTOR CHANGED   4.1
+! AREA OF LEAF WHEN FACTOR CHANGED   7.32
+
+@ LNUM AREAP AREA1 AREAT AREAS  T#PL  T#AL  WFLF  NFLF  AFLF  TFLF DAYSG
+     1   5.0   2.9   2.9   2.9   1.0   375   0.0   0.1   0.0   0.5  12.0
+     2   5.5   3.8   3.8   3.8   1.0   375   0.2   0.2   0.0   0.2   7.0
+     3   6.1   3.1   3.1   3.1   1.0   375   0.2   0.3   0.0   0.1  12.0
+     4   6.7   5.9   5.9   5.9   1.0   375   0.0   0.1   0.0   0.1  10.0
+     5   7.3   7.3   7.5   7.5   1.3   473   0.0   0.0   0.0   0.0   8.0
+     6  11.3  11.2  15.0  15.0   1.6   602   0.0   0.0   0.0   0.0   9.0
+     7  17.6  17.5  25.9  25.9   1.6   602   0.0   0.0   0.0   0.0  10.0
+     8  27.3  24.9  36.9  36.9   1.6   602   0.0   0.1   0.0   0.1   5.0
+     9  42.3   6.2   9.2   1.2   1.6   602   0.0   0.1   0.4   0.1   1.0
+
+*RUN 10   TUDU1501WH 10,0 Duernast 2015 S CSCER048                           
+
+! LEAF NUMBER    8.2
+! LEAF NUMBER WHEN INCREASE FACTOR CHANGED   4.1
+! AREA OF LEAF WHEN FACTOR CHANGED   7.32
+
+@ LNUM AREAP AREA1 AREAT AREAS  T#PL  T#AL  WFLF  NFLF  AFLF  TFLF DAYSG
+     1   5.0   2.9   2.9   2.9   1.0   375   0.0   0.1   0.0   0.5  12.0
+     2   5.5   3.1   3.1   3.1   1.0   375   0.1   0.3   0.0   0.2   7.0
+     3   6.1   2.4   2.4   2.4   1.0   375   0.1   0.6   0.0   0.1  12.0
+     4   6.7   3.4   3.4   3.4   1.0   375   0.0   0.5   0.0   0.1  10.0
+     5   7.3   3.7   3.7   3.7   1.1   423   0.0   0.5   0.0   0.0   8.0
+     6  11.3   5.2   6.0   6.0   1.3   483   0.0   0.5   0.0   0.0   9.0
+     7  17.6   7.2   8.9   8.9   1.3   482   0.0   0.6   0.0   0.0  10.0
+     8  27.3   9.0  11.0   9.2   1.3   482   0.0   0.7   0.2   0.1   5.0
+     9  42.3   2.3   2.8   0.0   1.3   480   0.0   0.7   0.6   0.1   1.0
+
+*RUN 11   TUDU1501WH 11,0 Duernast 2015 S CSCER048                           
+
+! LEAF NUMBER    8.2
+! LEAF NUMBER WHEN INCREASE FACTOR CHANGED   4.1
+! AREA OF LEAF WHEN FACTOR CHANGED   7.32
+
+@ LNUM AREAP AREA1 AREAT AREAS  T#PL  T#AL  WFLF  NFLF  AFLF  TFLF DAYSG
+     1   5.0   2.9   2.9   2.9   1.0   375   0.0   0.1   0.0   0.5  12.0
+     2   5.5   3.8   3.8   3.8   1.0   375   0.2   0.2   0.0   0.2   7.0
+     3   6.1   3.1   3.1   3.1   1.0   375   0.2   0.3   0.0   0.1  12.0
+     4   6.7   5.9   5.9   5.9   1.0   375   0.0   0.1   0.0   0.1  10.0
+     5   7.3   7.3   7.5   7.5   1.3   473   0.0   0.0   0.0   0.0   8.0
+     6  11.3  11.2  15.0  15.0   1.6   602   0.0   0.0   0.0   0.0   9.0
+     7  17.6  17.5  25.9  25.9   1.6   602   0.0   0.0   0.0   0.0  10.0
+     8  27.3  24.9  37.0  37.0   1.6   602   0.0   0.1   0.0   0.1   5.0
+     9  42.3   6.2   9.2   1.2   1.6   602   0.0   0.1   0.4   0.1   1.0
+
+*RUN 12   TUDU1501WH 12,0 Duernast 2015 S CSCER048                           
+
+! LEAF NUMBER    8.2
+! LEAF NUMBER WHEN INCREASE FACTOR CHANGED   4.1
+! AREA OF LEAF WHEN FACTOR CHANGED   7.32
+
+@ LNUM AREAP AREA1 AREAT AREAS  T#PL  T#AL  WFLF  NFLF  AFLF  TFLF DAYSG
+     1   5.0   2.9   2.9   2.9   1.0   375   0.0   0.1   0.0   0.5  12.0
+     2   5.5   3.7   3.7   3.7   1.0   375   0.2   0.2   0.0   0.2   7.0
+     3   6.1   3.0   3.0   3.0   1.0   375   0.2   0.3   0.0   0.1  12.0
+     4   6.7   5.8   5.8   5.8   1.0   375   0.0   0.1   0.0   0.1  10.0
+     5   7.3   7.3   7.5   7.5   1.3   473   0.0   0.0   0.0   0.0   8.0
+     6  11.3  11.2  15.0  15.0   1.6   602   0.0   0.0   0.0   0.0   9.0
+     7  17.6  17.5  25.9  25.9   1.6   602   0.0   0.0   0.0   0.0  10.0
+     8  27.3  24.7  36.7  36.7   1.6   602   0.0   0.1   0.0   0.1   5.0
+     9  42.3   6.1   9.1   1.1   1.6   602   0.0   0.1   0.4   0.1   1.0
+
+*RUN 13   TUDU1501WH 13,0 Duernast 2015 S CSCER048                           
+
+! LEAF NUMBER    8.2
+! LEAF NUMBER WHEN INCREASE FACTOR CHANGED   4.1
+! AREA OF LEAF WHEN FACTOR CHANGED   7.32
+
+@ LNUM AREAP AREA1 AREAT AREAS  T#PL  T#AL  WFLF  NFLF  AFLF  TFLF DAYSG
+     1   5.0   2.9   2.9   2.9   1.0   375   0.0   0.1   0.0   0.5  12.0
+     2   5.5   3.8   3.8   3.8   1.0   375   0.2   0.2   0.0   0.2   7.0
+     3   6.1   3.1   3.1   3.1   1.0   375   0.2   0.3   0.0   0.1  12.0
+     4   6.7   5.9   5.9   5.9   1.0   375   0.0   0.1   0.0   0.1  10.0
+     5   7.3   7.3   7.5   7.5   1.3   473   0.0   0.0   0.0   0.0   8.0
+     6  11.3  11.2  15.0  15.0   1.6   602   0.0   0.0   0.0   0.0   9.0
+     7  17.6  17.5  25.9  25.9   1.6   602   0.0   0.0   0.0   0.0  10.0
+     8  27.3  24.3  36.1  36.1   1.6   602   0.0   0.1   0.0   0.1   5.0
+     9  42.3   6.0   8.8   0.9   1.6   602   0.0   0.2   0.4   0.1   1.0
+
+*RUN 14   TUDU1501WH 14,0 Duernast 2015 S CSCER048                           
+
+! LEAF NUMBER    8.2
+! LEAF NUMBER WHEN INCREASE FACTOR CHANGED   4.1
+! AREA OF LEAF WHEN FACTOR CHANGED   7.32
+
+@ LNUM AREAP AREA1 AREAT AREAS  T#PL  T#AL  WFLF  NFLF  AFLF  TFLF DAYSG
+     1   5.0   2.9   2.9   2.9   1.0   375   0.0   0.1   0.0   0.5  12.0
+     2   5.5   3.8   3.8   3.8   1.0   375   0.2   0.2   0.0   0.2   7.0
+     3   6.1   3.1   3.1   3.1   1.0   375   0.2   0.3   0.0   0.1  12.0
+     4   6.7   5.8   5.8   5.8   1.0   375   0.0   0.1   0.0   0.1  10.0
+     5   7.3   7.3   7.5   7.5   1.3   473   0.0   0.0   0.0   0.0   8.0
+     6  11.3  11.2  15.0  15.0   1.6   602   0.0   0.0   0.0   0.0   9.0
+     7  17.6  17.5  25.9  25.9   1.6   602   0.0   0.0   0.0   0.0  10.0
+     8  27.3  23.5  34.9  34.9   1.6   602   0.0   0.1   0.0   0.1   5.0
+     9  42.3   5.6   8.3   0.6   1.6   602   0.0   0.2   0.4   0.1   1.0
+
+*RUN 15   TUDU1501WH 15,0 Duernast 2015 S CSCER048                           
+
+! LEAF NUMBER    8.2
+! LEAF NUMBER WHEN INCREASE FACTOR CHANGED   4.1
+! AREA OF LEAF WHEN FACTOR CHANGED   7.32
+
+@ LNUM AREAP AREA1 AREAT AREAS  T#PL  T#AL  WFLF  NFLF  AFLF  TFLF DAYSG
+     1   5.0   2.9   2.9   2.9   1.0   375   0.0   0.1   0.0   0.5  12.0
+     2   5.5   3.1   3.1   3.1   1.0   375   0.1   0.3   0.0   0.2   7.0
+     3   6.1   2.4   2.4   2.4   1.0   375   0.1   0.6   0.0   0.1  12.0
+     4   6.7   3.4   3.4   3.4   1.0   375   0.0   0.5   0.0   0.1  10.0
+     5   7.3   3.7   3.7   3.7   1.1   423   0.0   0.5   0.0   0.0   8.0
+     6  11.3   5.2   6.0   6.0   1.3   483   0.0   0.5   0.0   0.0   9.0
+     7  17.6   7.2   8.9   8.9   1.3   482   0.0   0.6   0.0   0.0  10.0
+     8  27.3   9.0  11.0   9.3   1.3   482   0.0   0.7   0.2   0.1   5.0
+     9  42.3   2.3   2.8   0.0   1.3   480   0.0   0.7   0.6   0.1   1.0

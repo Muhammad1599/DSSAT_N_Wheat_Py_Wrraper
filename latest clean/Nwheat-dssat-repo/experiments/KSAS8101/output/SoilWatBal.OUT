@@ -1,0 +1,199 @@
+*WATER BALANCE OUTPUT FILE
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:05
+
+*RUN   1        : DRYLAND  - 0 KG N/HA      CSCER048 KSAS8101    1
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  1   : DRYLAND  - 0 KG N/HA      CSCER048
+  
+
+!     WATER BALANCE PARAMETERS
+!     ========================                 --mm--
+
+!     Soil H20 (start) on Year/day 1981/279    162.75
+!     Soil H20 (final) on Year/day 1982/174    215.02
+!     Effective Irrigation                       0.00
+!     Precipitation                            600.30
+!     Water added with new mulch                 0.02
+!     Net lateral flow                           0.00
+!     Drainage                                 115.90
+!     Tiledrain flow                             0.00
+!     Runoff                                     7.34
+!     Mulch evaporation                          0.21
+!     Soil Evaporation                         262.04
+!     Transpiration                            162.52
+!     Total evapotranspiration                 424.56
+!     Total potential evapotranspiration       577.71
+
+!     Initial mulch water content                0.00
+!     Final mulch water content                  0.05
+
+!     Final Balance                             0.001
+
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:06
+
+*RUN   2        : DRYLAND  - 60 KG N/HA     CSCER048 KSAS8101    2
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  2   : DRYLAND  - 60 KG N/HA     CSCER048
+  
+
+!     WATER BALANCE PARAMETERS
+!     ========================                 --mm--
+
+!     Soil H20 (start) on Year/day 1981/279    162.75
+!     Soil H20 (final) on Year/day 1982/174    207.21
+!     Effective Irrigation                       0.00
+!     Precipitation                            600.30
+!     Water added with new mulch                 0.03
+!     Net lateral flow                           0.00
+!     Drainage                                 106.21
+!     Tiledrain flow                             0.00
+!     Runoff                                     7.58
+!     Mulch evaporation                          0.23
+!     Soil Evaporation                         234.47
+!     Transpiration                            207.31
+!     Total evapotranspiration                 441.78
+!     Total potential evapotranspiration       572.15
+
+!     Initial mulch water content                0.00
+!     Final mulch water content                  0.05
+
+!     Final Balance                            -0.000
+
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:06
+
+*RUN   3        : DRYLAND  - 180 KG N/HA SP CSCER048 KSAS8101    3
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  3   : DRYLAND  - 180 KG N/HA SP CSCER048
+  
+
+!     WATER BALANCE PARAMETERS
+!     ========================                 --mm--
+
+!     Soil H20 (start) on Year/day 1981/279    162.75
+!     Soil H20 (final) on Year/day 1982/174    204.18
+!     Effective Irrigation                       0.00
+!     Precipitation                            600.30
+!     Water added with new mulch                 0.03
+!     Net lateral flow                           0.00
+!     Drainage                                 107.18
+!     Tiledrain flow                             0.00
+!     Runoff                                     7.60
+!     Mulch evaporation                          0.24
+!     Soil Evaporation                         222.42
+!     Transpiration                            221.39
+!     Total evapotranspiration                 443.81
+!     Total potential evapotranspiration       570.00
+
+!     Initial mulch water content                0.00
+!     Final mulch water content                  0.06
+
+!     Final Balance                             0.003
+
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:06
+
+*RUN   4        : IRRIGATED - 0 KG N/HA     CSCER048 KSAS8101    4
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  4   : IRRIGATED - 0 KG N/HA     CSCER048
+  
+
+!     WATER BALANCE PARAMETERS
+!     ========================                 --mm--
+
+!     Soil H20 (start) on Year/day 1981/279    162.75
+!     Soil H20 (final) on Year/day 1982/174    217.90
+!     Effective Irrigation                     149.10
+!     Precipitation                            600.30
+!     Water added with new mulch                 0.02
+!     Net lateral flow                           0.00
+!     Drainage                                 247.74
+!     Tiledrain flow                             0.00
+!     Runoff                                     7.50
+!     Mulch evaporation                          0.21
+!     Soil Evaporation                         286.54
+!     Transpiration                            152.24
+!     Total evapotranspiration                 438.78
+!     Total potential evapotranspiration       579.20
+
+!     Initial mulch water content                0.00
+!     Final mulch water content                  0.05
+
+!     Final Balance                             0.001
+
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:06
+
+*RUN   5        : IRRIGATED - 60 KG N/HA    CSCER048 KSAS8101    5
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  5   : IRRIGATED - 60 KG N/HA    CSCER048
+  
+
+!     WATER BALANCE PARAMETERS
+!     ========================                 --mm--
+
+!     Soil H20 (start) on Year/day 1981/279    162.75
+!     Soil H20 (final) on Year/day 1982/174    211.85
+!     Effective Irrigation                     149.10
+!     Precipitation                            600.30
+!     Water added with new mulch                 0.03
+!     Net lateral flow                           0.00
+!     Drainage                                 241.61
+!     Tiledrain flow                             0.00
+!     Runoff                                     7.75
+!     Mulch evaporation                          0.23
+!     Soil Evaporation                         257.74
+!     Transpiration                            192.95
+!     Total evapotranspiration                 450.69
+!     Total potential evapotranspiration       574.12
+
+!     Initial mulch water content                0.00
+!     Final mulch water content                  0.05
+
+!     Final Balance                             0.001
+
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:07
+
+*RUN   6        : IRRIGATED 180 KG N/HA SPL CSCER048 KSAS8101    6
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  6   : IRRIGATED 180 KG N/HA SPL CSCER048
+  
+
+!     WATER BALANCE PARAMETERS
+!     ========================                 --mm--
+
+!     Soil H20 (start) on Year/day 1981/279    162.75
+!     Soil H20 (final) on Year/day 1982/174    205.63
+!     Effective Irrigation                     149.10
+!     Precipitation                            600.30
+!     Water added with new mulch                 0.03
+!     Net lateral flow                           0.00
+!     Drainage                                 240.44
+!     Tiledrain flow                             0.00
+!     Runoff                                     8.10
+!     Mulch evaporation                          0.24
+!     Soil Evaporation                         234.34
+!     Transpiration                            223.38
+!     Total evapotranspiration                 457.71
+!     Total potential evapotranspiration       570.29
+
+!     Initial mulch water content                0.00
+!     Final mulch water content                  0.06
+
+!     Final Balance                             0.003
+

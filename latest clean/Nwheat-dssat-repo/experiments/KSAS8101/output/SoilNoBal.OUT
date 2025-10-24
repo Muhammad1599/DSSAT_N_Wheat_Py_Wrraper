@@ -1,0 +1,179 @@
+*SOIL ORGANIC N BALANCE
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:05
+
+*RUN   1        : DRYLAND  - 0 KG N/HA      CSCER048 KSAS8101    1
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  1   : DRYLAND  - 0 KG N/HA      CSCER048
+  
+
+
+!                                        INITIAL Year/Doy      FINAL Year/Doy
+!                                                1981/279            1982/174
+!SOIL N BALANCE                                 -----------kg N/ha-----------
+
+!   Soil Humus N                                  7840.65             7831.95
+!   Soil Litter N                                   80.10               32.48
+!   N in Surface Residue                             0.00                0.93
+
+!   Added to / Removed from Soil:
+!   N in Harvest Residues from Previous Crop         0.00
+!   N from Organic Applications                      0.00
+!   N from senesced plant matter                     1.30
+!   N immobilized                                    0.04
+!   N mineralized                                                       56.74
+
+!   Total N balance                               7922.10             7922.10
+!   Balance                                                             0.000
+
+!===============================================================================
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:06
+
+*RUN   2        : DRYLAND  - 60 KG N/HA     CSCER048 KSAS8101    2
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  2   : DRYLAND  - 60 KG N/HA     CSCER048
+  
+
+
+!                                        INITIAL Year/Doy      FINAL Year/Doy
+!                                                1981/279            1982/174
+!SOIL N BALANCE                                 -----------kg N/ha-----------
+
+!   Soil Humus N                                  7840.65             7832.55
+!   Soil Litter N                                   80.10               31.49
+!   N in Surface Residue                             0.00                1.04
+
+!   Added to / Removed from Soil:
+!   N in Harvest Residues from Previous Crop         0.00
+!   N from Organic Applications                      0.00
+!   N from senesced plant matter                     1.57
+!   N immobilized                                    0.04
+!   N mineralized                                                       57.29
+
+!   Total N balance                               7922.36             7922.36
+!   Balance                                                            -0.001
+
+!===============================================================================
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:06
+
+*RUN   3        : DRYLAND  - 180 KG N/HA SP CSCER048 KSAS8101    3
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  3   : DRYLAND  - 180 KG N/HA SP CSCER048
+  
+
+
+!                                        INITIAL Year/Doy      FINAL Year/Doy
+!                                                1981/279            1982/174
+!SOIL N BALANCE                                 -----------kg N/ha-----------
+
+!   Soil Humus N                                  7840.65             7832.52
+!   Soil Litter N                                   80.10               31.96
+!   N in Surface Residue                             0.00                1.10
+
+!   Added to / Removed from Soil:
+!   N in Harvest Residues from Previous Crop         0.00
+!   N from Organic Applications                      0.00
+!   N from senesced plant matter                     1.68
+!   N immobilized                                    0.04
+!   N mineralized                                                       56.90
+
+!   Total N balance                               7922.48             7922.48
+!   Balance                                                             0.000
+
+!===============================================================================
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:06
+
+*RUN   4        : IRRIGATED - 0 KG N/HA     CSCER048 KSAS8101    4
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  4   : IRRIGATED - 0 KG N/HA     CSCER048
+  
+
+
+!                                        INITIAL Year/Doy      FINAL Year/Doy
+!                                                1981/279            1982/174
+!SOIL N BALANCE                                 -----------kg N/ha-----------
+
+!   Soil Humus N                                  7840.65             7831.44
+!   Soil Litter N                                   80.10               30.93
+!   N in Surface Residue                             0.00                0.92
+
+!   Added to / Removed from Soil:
+!   N in Harvest Residues from Previous Crop         0.00
+!   N from Organic Applications                      0.00
+!   N from senesced plant matter                     1.26
+!   N immobilized                                    0.04
+!   N mineralized                                                       58.76
+
+!   Total N balance                               7922.06             7922.06
+!   Balance                                                             0.001
+
+!===============================================================================
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:06
+
+*RUN   5        : IRRIGATED - 60 KG N/HA    CSCER048 KSAS8101    5
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  5   : IRRIGATED - 60 KG N/HA    CSCER048
+  
+
+
+!                                        INITIAL Year/Doy      FINAL Year/Doy
+!                                                1981/279            1982/174
+!SOIL N BALANCE                                 -----------kg N/ha-----------
+
+!   Soil Humus N                                  7840.65             7831.66
+!   Soil Litter N                                   80.10               29.99
+!   N in Surface Residue                             0.00                1.03
+
+!   Added to / Removed from Soil:
+!   N in Harvest Residues from Previous Crop         0.00
+!   N from Organic Applications                      0.00
+!   N from senesced plant matter                     1.52
+!   N immobilized                                    0.04
+!   N mineralized                                                       59.64
+
+!   Total N balance                               7922.32             7922.32
+!   Balance                                                             0.000
+
+!===============================================================================
+
+*DSSAT Cropping System Model Ver. 4.8.5.000 -release  SEP 11, 2025 14:40:07
+
+*RUN   6        : IRRIGATED 180 KG N/HA SPL CSCER048 KSAS8101    6
+ MODEL          : CSCER048 - Wheat
+ EXPERIMENT     : KSAS8101 WH N RESPONSE,KANSAS STATE  3FE(N)*2IR  (DSSAT3)
+ DATA PATH      :
+ TREATMENT  6   : IRRIGATED 180 KG N/HA SPL CSCER048
+  
+
+
+!                                        INITIAL Year/Doy      FINAL Year/Doy
+!                                                1981/279            1982/174
+!SOIL N BALANCE                                 -----------kg N/ha-----------
+
+!   Soil Humus N                                  7840.65             7831.84
+!   Soil Litter N                                   80.10               29.19
+!   N in Surface Residue                             0.00                1.10
+
+!   Added to / Removed from Soil:
+!   N in Harvest Residues from Previous Crop         0.00
+!   N from Organic Applications                      0.00
+!   N from senesced plant matter                     1.69
+!   N immobilized                                    0.04
+!   N mineralized                                                       60.35
+
+!   Total N balance                               7922.49             7922.49
+!   Balance                                                            -0.001
