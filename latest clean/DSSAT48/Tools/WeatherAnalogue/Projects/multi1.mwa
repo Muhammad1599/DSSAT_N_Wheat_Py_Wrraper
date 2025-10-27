@@ -1,8 +1,0 @@
-*WEATHER KNN MLT: multi1.wpa
- 
-*FILES
- 
-@N  WEATHER     WTHFILE      WTHDIR
-1 WEATH WATE4060.WTH C:\DSSAT47\Tools\WeatherAnalogue\Multiyears\
-1 HISTO WATE4060.WTH C:\DSSAT47\Tools\WeatherAnalogue\Multiyears\Histo\
-1 PREDICT WATE4060.WTH C:\DSSAT47\Tools\WeatherAnalogue\Multiyears\Predict

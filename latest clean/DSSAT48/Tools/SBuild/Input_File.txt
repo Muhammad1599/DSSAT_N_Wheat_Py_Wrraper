@@ -1,3 +1,0 @@
-@ICSim  0 dssat35\ICSim\EBPL8501.MZX
-@SBuild 1 dssat35\Soil\Soil.sol IB00000004
-@GBuild   dssat35\SOYBEAN\ Growth1.out Water.out
