@@ -798,33 +798,6 @@ TUDU1501.WHT Structure:
   - Units: HWAD (kg/ha), GWGD (mg/grain), GNAD (kg N/ha)
 
 
-================================================================================
-QUALITY ASSURANCE NOTES
-================================================================================
-
-Column Index Verification (CRITICAL FIXES):
-  1. Temperature columns in Weather.OUT:
-     - CORRECTED: Now using columns 9 (TMXD) and 10 (TMND)
-     - Previously: Used wrong columns, causing smoothed/incorrect temperature
-  
-  2. Solar radiation in Weather.OUT:
-     - CORRECTED: Now using column 6 (SRAD)
-     - Previously: May have used wrong column
-  
-  3. Grain nitrogen in PlantN.OUT:
-     - CORRECTED: Now using column 5 (GNAD - grain N only)
-     - Previously: Confusion between CNAD (total) and GNAD (grain)
-  
-  4. Grain weight in PlantGro.OUT:
-     - CORRECTED: Now using column 15 (GWGD) directly for N-Wheat
-     - Previously: Calculated from yield/number, compounding errors
-  
-  5. Water stress cumulative:
-     - CORRECTED: Now calculating as (1 - factor).cumsum()
-     - Previously: Summed factors directly (wrong interpretation)
-
-These corrections were implemented following professor feedback on October 27, 2025.
-
 
 ================================================================================
 SCRIPT EXECUTION SUMMARY
