@@ -1,0 +1,25 @@
+! Phenological events as Days after planting (DAP)
+!
+!  Only four can be read in and the rest should be outcomented with "!"
+!
+!  Phenological events can be added to this list!	
+!  In order to work Phenological event - code (etc. ADAP) has to be outputed by DSSAT in the Evaluate.OUT and this format has to be followed:
+!  Example:
+!  Code		Code_Name
+!  ADAP		Anthesis_day		
+!
+!---------------------------------------!
+ADAP		Anthesis_day_(DAP)
+PD1P		First_pod_day_(DAP)
+PDFP        First_seed_day_(DAP)                                    
+MDAP		Physiological_matur_day_(DAP)       
+!PD1T		First_pod_date_(DAP)(YrDoy)_?
+!EDAP		Emergence_date_(DAP)
+!B1DAP		Branch_1_date_(DAP)
+!B2DAP		Branch_2_date_(DAP)
+!B3DAP		Branch_3_date_(DAP)
+!B4DAP		Branch_4_date_(DAP)                  
+!FDAP		Forcing_Date_(DAP)
+!TDAP		Begin_tuber_growth_(DAP)
+!---------------------------------------!
+

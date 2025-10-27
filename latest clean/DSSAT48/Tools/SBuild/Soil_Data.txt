@@ -1,0 +1,22 @@
+*Hydrology Group
+Lowest            61 73 81 84 1
+Moderately Low    64 76 84 87 2
+Moderately High   68 80 88 91 3
+Highest           71 83 91 94 4
+
+*Color Modifiers
+Brown             0.13 BN
+Red               0.14 R
+Black             0.09 BL
+Grey              0.13 G
+Yellow            0.17 Y
+
+*Permeability Class
+Very Excessive     0.95
+Excessive          0.85
+Somewhat excessive 0.75
+Well               0.60
+Moderately well    0.40
+Somewhat poorly    0.25
+Poorly             0.05
+Very Poorly        0.01

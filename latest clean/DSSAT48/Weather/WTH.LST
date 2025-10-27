@@ -1,0 +1,973 @@
+*WEATHER LIST
+
+@#   FILENAME EXT SITE NAME.................  LAT.....  LONG.... ELEV.  TAV.. TAMP..
+   1 ACNM1301 WTH ACNM                         34.583 -103.200  1348  12.8  11.2 -99
+   2 ACNM1401 WTH ACNM                         34.583 -102.800  1348  12.8  11.2 -99
+   3 ALCL5601 WTH Clanton, Alabama             32.480  -86.380   185  16.5  10.3  1.
+   4 ALCL5699 WTH Clanton, Alabama             32.480  -86.380   185  16.5  10.3  1.
+   5 ALCL5701 WTH Clanton, Alabama             32.480  -86.380   185  16.5  10.3  1.
+   6 ALCL5799 WTH Clanton, Alabama             32.480  -86.380   185  16.5  10.3  1.
+   7 ALCL5801 WTH Clanton, Alabama             32.480  -86.380   185  16.5  10.3  1.
+   8 ALCL5899 WTH Clanton, Alabama             32.480  -86.380   185  16.5  10.3  1.
+   9 ALCL5901 WTH Clanton, Alabama             32.480  -86.380   185  16.5  10.3  1.
+  10 ALCL5999 WTH Clanton, Alabama             32.480  -86.380   185  16.5  10.3  1.
+  11 ALLU6101 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  12 ALLU6201 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  13 ALLU6301 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  14 ALLU6401 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  15 ALLU6501 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  16 ALLU6601 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  17 ALLU6701 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  18 ALLU6801 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  19 ALLU6901 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  20 ALLU7001 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  21 ALLU7101 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  22 ALLU7201 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  23 ALLU7301 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  24 ALLU7401 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  25 ALLU7501 WTH ALLU                         40.940   19.690     0   0.0   0.0   0
+  26 ALLU7601 WTH ALLU                         40.940   19.690     0   0.0   0.0   0
+  27 ALLU7701 WTH ALLU                         40.940   19.690     0   0.0   0.0   0
+  28 ALLU7801 WTH ALLU                         40.940   19.690     0   0.0   0.0   0
+  29 ALLU7901 WTH ALLU                         40.940   19.690     0   0.0   0.0   0
+  30 ALLU8001 WTH ALLU                         40.940   19.690     0   0.0   0.0   0
+  31 ALLU8101 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  32 ALLU8201 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  33 ALLU8301 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  34 ALLU8401 WTH allu                         40.940   19.690     0   0.0   0.0   0
+  35 AMES8201 WTH Ames,IA                      42.000  -93.770   320   8.3  16.7   2
+  36 AMES8301 WTH Ames,IA                      42.000  -93.770   320   9.2  15.8   2
+  37 AMES8401 WTH Ames,IA                      42.000  -93.770   320   9.4  15.6   2
+  38 AMES8501 WTH Ames,IA                      42.000  -93.770   320   8.4  16.6   2
+  39 AMES8601 WTH Ames,IA                      42.000  -93.770   320   9.9  15.1   2
+  40 AMES8701 WTH Ames,IA                      42.000  -93.770   320  11.4  14.6   2
+  41 AMES8801 WTH ISU Agronomy Farm            42.000  -93.770   320  10.2  14.8   2
+  42 AMES8901 WTH ISU Agronomy Farm            42.000  -93.770   320   8.8  16.2   2
+  43 AMES9001 WTH Ames,Iowa,USA                 42.00   -93.50   320  10.3  14.7   2
+  44 AMES9101 WTH I.S.U. Johnson Farm, Stor    42.000  -93.770   320  12.8  12.2  1.
+  45 AMES9201 WTH I.S.U. Johnson Farm, Stor    42.000  -93.770   320  13.3  14.7  1.
+  46 AMES9301 WTH I.S.U. Johnson Farm, Stor    42.000  -93.770   320   9.8  14.2  1.
+  47 AMES9401 WTH I.S.U. Johnson Farm, Stor    42.000  -93.770   320  10.9  14.1  1.
+  48 AMES9501 WTH Ames,IA                      42.000  -93.770   320   8.8  17.0   2
+  49 AMES9601 WTH Ames,IA                      42.000  -93.770   320  11.0  16.0   2
+  50 ANBE8701 WTH Beerwah                     -27.500  151.000     0  26.1   1.7 -99
+  51 ANBE8801 WTH Beerwah                     -27.500  151.000     0  26.1   1.7 -99
+  52 ANBE8901 WTH Beerwah                     -27.500  151.000     0  26.1   1.7 -99
+  53 ANBE9001 WTH Beerwah                     -27.500  151.000     0  26.1   1.7 -99
+  54 ANGU7801 WTH Anguededou, Cote d'Ivoire     5.380   -4.280     0  26.1   3.4 -99
+  55 ANGU7901 WTH Anguededou, Cote d'Ivoire     5.380   -4.280     0  26.1   3.4 -99
+  56 ANGU8001 WTH Anguededou, Cote d'Ivoire     5.380   -4.280     0  26.1   3.4 -99
+  57 ANGU8101 WTH Anguededou, Cote d'Ivoire     5.380   -4.280     0  26.1   3.4 -99
+  58 ANGU8201 WTH Anguededou, Cote d'Ivoire     5.380   -4.280     0  26.1   3.4 -99
+  59 ANGU8301 WTH Anguededou, Cote d'Ivoire     5.380   -4.280     0  26.1   3.4 -99
+  60 ANGU8401 WTH Anguededou, Cote d'Ivoire     5.380   -4.280     0  26.1   3.4 -99
+  61 ANGU8501 WTH Anguededou, Cote d'Ivoire     5.380   -4.280     0  26.1   3.4 -99
+  62 ANGU8601 WTH Anguededou, Cote d'Ivoire     5.380   -4.280     0  26.1   3.4 -99
+  63 ANGU8701 WTH Anguededou, Cote d'Ivoire     5.380   -4.280     0  26.1   3.4 -99
+  64 ANGU8801 WTH Anguededou, Cote d'Ivoire     5.380   -4.280     0  26.1   3.4 -99
+  65 ANGU8901 WTH Anguededou, Cote d'Ivoire     5.380   -4.280     0  26.1   3.4 -99
+  66 ANGU9001 WTH Anguededou, Cote d'Ivoire     5.380   -4.280     0  26.1   3.4 -99
+  67 ANGU9101 WTH Anguededou, Cote d'Ivoire     5.380   -4.280     0  26.1   3.4 -99
+  68 AUCB7001 WTH AUCB                         -35.00   149.00     0  17.0   7.0   -
+  69 AUSH9919 WTH AUSH9919                     32.443  -85.900   132  18.4  20.4   2
+  70 AUTA8101 WTH AUTA                        -36.450  145.233   114 20.26  7.31 -99
+  71 AUTA8201 WTH AUTA                        -36.450  145.233   114 21.56  7.35 -99
+  72 AUZE0101 WTH Auzeville, France            43.530    1.500   167  13.9  19.1 -99
+  73 AUZE0501 WTH Auzeville, France            43.530    1.500   167  13.9  19.1 -99
+  74 AUZE0601 WTH Auzeville, France            43.530    1.500   167  13.9  19.1 -99
+  75 AZMC8832 WTH Maricopa, Arizona            AZMC   33.069 -111.972     362       
+  76 BAGD1603 WTH Jashore, Bangladesh          23.190   89.190     6  26.4  12.5 -99
+  77 BRJD7501 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  78 BRJD7601 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  79 BRJD7701 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  80 BRJD7801 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  81 BRJD7901 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  82 BRJD8001 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  83 BRJD8101 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  84 BRJD8201 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  85 BRJD8301 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  86 BRJD8401 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  87 BRJD8501 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  88 BRJD8601 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  89 BRJD8701 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  90 BRJD8801 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  91 BRJD8901 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  92 BRJD9001 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  93 BRJD9101 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  94 BRJD9201 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  95 BRJD9301 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  96 BRJD9401 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  97 BRJD9501 WTH GAZIPUR                       0.000    0.000     0  25.6   9.8 -99
+  98 BRKS1109 WTH Brooks, Alberta              50.550 -111.850   747   4.6  28.6   2
+  99 BRPI0201 WTH Piracicaba, SP. Brazil      -22.430  -47.250   580  21.6   7.2 -99
+ 100 BRRI9801 WTH BRRI_jOYEDBPUR               24.000   92.230     8  26.0   8.5   2
+ 101 BUCH9701 WTH Bucharesr, RM                44.472   26.072   300 -99.0 -99.0 -99
+ 102 BUCH9801 WTH Bucharesr, RM                44.472   26.072   300 -99.0 -99.0 -99
+ 103 CAPE8437 WTH Petropavl, KAZ NASA POWER     54.75    69.25     -99   1.7  38.2  
+ 104 CBAN8401 WTH Antioquia,ElNus,Colombia      6.483  -74.820   835  22.7   0.4   0
+ 105 CBAN8501 WTH Antioquia,ElNus,Colombia      6.483  -74.820   835  22.7   0.4   0
+ 106 CBAN8601 WTH Antioquia,ElNus,Colombia      6.483  -74.820   835  22.7   0.4   0
+ 107 CCCA7801 WTH Carimagua,Colombia            4.610  -71.310   200  26.7   8.8   0
+ 108 CCCA7901 WTH Carimagua,Colombia            4.610  -71.310   200  26.7   8.8   0
+ 109 CCCA8001 WTH Carimagua,Colombia            4.610  -71.310   200  26.7   8.8   0
+ 110 CCCA8101 WTH Carimagua,Colombia            4.610  -71.310   200  26.7   8.8   0
+ 111 CCCA8201 WTH Carimagua,Colombia            4.610  -71.310   200  26.7   8.8   0
+ 112 CCCA8301 WTH Carimagua,Colombia            4.610  -71.310   200  26.7   8.8   0
+ 113 CCCA9201 WTH CIAT-CARIMAGUA-COLOMBIA       4.610  -71.310   180  26.6   8.8   0
+ 114 CCCA9301 WTH CIAT-CARIMAGUA-COLOMBIA       4.620  -71.310   180  26.6   8.8   0
+ 115 CCCA9401 WTH CIAT-CARIMAGUA-COLOMBIA       4.620  -71.312   180  26.6   8.8   0
+ 116 CCCA9501 WTH CIAT-CARIMAGUA-COLOMBIA       4.610  -71.312   180  26.6   8.8   0
+ 117 CCCA9601 WTH CIAT-CARIMAGUA-COLOMBIA       4.610  -71.312   180  26.6   8.8   0
+ 118 CCCA9701 WTH CIAT-CARIMAGUA-COLOMBIA       4.620  -71.312   180  26.6   8.8   0
+ 119 CCCA9801 WTH CIAT-CARIMAGUA-COLOMBIA       4.620  -71.320   180  26.6   8.8   0
+ 120 CCCE9501 WTH CURLA ES                     15.730  -86.870    26  25.8   3.7 -99
+ 121 CCPA7801 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 122 CCPA7901 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 123 CCPA8001 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 124 CCPA8101 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 125 CCPA8201 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 126 CCPA8301 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 127 CCPA8401 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 128 CCPA8501 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 129 CCPA8601 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 130 CCPA8701 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 131 CCPA8801 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 132 CCPA8901 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 133 CCPA9001 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 134 CCPA9101 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 135 CCPA9201 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 136 CCPA9301 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 137 CCPA9401 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 138 CCPA9501 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 139 CCPA9601 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 140 CCPA9701 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 141 CCPA9801 WTH Palmira,Valle,Colombia        3.480  -76.350   965  24.3  10.3   0
+ 142 CCPM9701 WTH CIAT,Palmira,Valle,Colo.      3.480  -76.350   965  24.3   0.5  0.
+ 143 CCPO9001 WTH CIAT,POPAYAN,COLOMBIA         2.200  -76.390   990  23.7   0.5   0
+ 144 CCQU7901 WTH Quilichao,Colombia            3.080  -76.500   990  23.7  10.9   0
+ 145 CCQU8001 WTH Quilichao,Colombia            3.080  -76.500   990  23.7  10.9   0
+ 146 CCQU8101 WTH Quilichao,Colombia            3.080  -76.500   990  23.7  10.9   0
+ 147 CCQU8201 WTH Quilichao,Colombia            3.080  -76.500   990  23.7  10.9   0
+ 148 CCQU8301 WTH Quilichao,Colombia            3.080  -76.500   990  23.7  10.9   0
+ 149 CCQU8401 WTH Quilichao,Colombia            3.080  -76.500   990  23.7  10.9   0
+ 150 CCQU8501 WTH Quilichao,Colombia            3.080  -76.500   990  23.7  10.9   0
+ 151 CCQU8601 WTH Quilichao,Colombia            3.080  -76.500   990  24.0  10.9   0
+ 152 CCQU8701 WTH Quilichao,Colombia            3.080  -76.500   990  24.0  10.9  0.
+ 153 CCYU8001 WTH Yurimaguas,Per£             -5.933  -76.083   184  25.9   0.7   0
+ 154 CCYU8101 WTH Yurimaguas,Per£             -5.933  -76.083   184  25.9   0.7   0
+ 155 CCYU8201 WTH Yurimaguas,Per£             -5.933  -76.083   184  25.9   0.7   0
+ 156 CCYU8301 WTH Yurimaguas,Per£             -5.933  -76.083   184  25.9   0.7   0
+ 157 CCYU8401 WTH Yurimaguas,Per£             -5.933  -76.083   184  25.9   0.7   0
+ 158 CIEB9701 WTH CIMMYT El Batan Station      19.310  -98.500  2200  16.0   7.9 -99
+ 159 CIEB9801 WTH CIMMYT El Batan Station      19.310  -98.500  2200  16.0   7.9 -99
+ 160 CIEB9803 WTH CIMMYTElBatanStation, Fal    19.310  -98.500  2200  16.0   7.9 -99
+ 161 CIEB9804 WTH CIMMYT ElBatanStation,       19.310  -98.500  2200  16.0   7.9 -99
+ 162 CIML9601 WTH Chitedzi Malawi             -13.590   33.380  1149  21.2   6.4 -99
+ 163 CIML9701 WTH ChitedziMalawi              -13.590   33.380  1149  21.2   6.4 -99
+ 164 CISR9701 WTH SantaRosa Original data C    18.307  -95.117   600  24.7   5.1 -99
+ 165 CITL9701 WTH CIMMYT,Tlaltizapan,Moreli    18.680  -99.137   900  25.4   8.0  0.
+ 166 CITL9899 WTH CIMMYT,Tlaltizapan,Moreli    18.680  -99.137   900  25.4   8.0  0.
+ 167 CLMO8501 WTH MORRIS,MINNESOTA,USA          45.56   -95.67                      
+ 168 CNCH8101 WTH Chinchina,Colombia            4.960  -75.700  1360  22.1   0.8   0
+ 169 CNCH8201 WTH Chinchina,Colombia            4.960  -75.700  1360  22.1   0.8   0
+ 170 CNCH8301 WTH Chinchina,Colombia            4.960  -75.700  1360  22.1   0.8   0
+ 171 CNCH8401 WTH Chinchina,Colombia            4.960  -75.700  1360  22.1   0.8   0
+ 172 CNPE0001 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 173 CNPE0101 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 174 CNPE0201 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 175 CNPE0301 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 176 CNPE0401 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 177 CNPE0501 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 178 CNPE0601 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 179 CNPE0701 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 180 CNPE6701 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 181 CNPE6801 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 182 CNPE6901 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 183 CNPE7001 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 184 CNPE7101 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 185 CNPE7201 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 186 CNPE7301 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 187 CNPE7401 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 188 CNPE7501 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 189 CNPE7601 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 190 CNPE7701 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 191 CNPE7801 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 192 CNPE7901 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 193 CNPE8001 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 194 CNPE8101 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 195 CNPE8201 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 196 CNPE8301 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 197 CNPE8401 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 198 CNPE8501 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 199 CNPE8601 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 200 CNPE8701 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 201 CNPE8801 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 202 CNPE8901 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 203 CNPE9001 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 204 CNPE9101 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 205 CNPE9201 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 206 CNPE9301 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 207 CNPE9401 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 208 CNPE9501 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 209 CNPE9601 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 210 CNPE9701 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 211 CNPE9801 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 212 CNPE9901 WTH PERGAMINO                   -33.929  -60.549    70  16.6   6.7 -99
+ 213 CNSA0501 WTH Colombia - CENICAÑA San      3.362  -76.302  1020  24.0   0.5   2
+ 214 CNSA0601 WTH Colombia - CENICAÑA San      3.362  -76.302  1020  24.0   0.5   2
+ 215 CNSA0701 WTH Colombia - CENICAÑA San      3.362  -76.302  1020  24.0   0.5   2
+ 216 CNSA0801 WTH Colombia - CENICAÑA San      3.362  -76.302  1020  24.0   0.5   2
+ 217 COPA6601 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 218 COPA6701 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 219 COPA6801 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 220 COPA6901 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 221 COPA7001 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 222 COPA7101 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 223 COPA7201 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 224 COPA7301 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 225 COPA7401 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 226 COPA7501 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 227 COPA7601 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 228 COPA7701 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 229 COPA7801 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 230 COPA7901 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 231 COPA8001 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 232 COPA8101 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 233 COPA8201 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 234 COPA8301 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 235 COPA8401 WTH Palmira_Colombia              3.480  -76.370   965  24.0   0.5  0.
+ 236 CORD8601 WTH Cordoba,Spain                38.000   -4.000    90  17.7   8.8   1
+ 237 CORD8701 WTH Cordoba,Spain                38.000   -4.000    90  17.7   8.8   1
+ 238 CORD8801 WTH Cordoba,Spain                38.000   -4.000    90  17.7   8.8   1
+ 239 CPSR1301 WTH                            -11.1275 -75.3564   830   -99   -99   -
+ 240 CPTB9401 WTH CardenasTabascoMexico        18.000  -93.580    12  26.3   5.0 -99
+ 241 CPTB9501 WTH CardenasTabascoMexico        18.000  -93.580    12  26.3   5.0 -99
+ 242 CRND0001 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 243 CRND0101 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 244 CRND0201 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 245 CRND0301 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 246 CRND0401 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 247 CRND0501 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 248 CRND0601 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 249 CRND0701 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 250 CRND0801 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 251 CRND0901 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 252 CRND1001 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 253 CRND1101 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 254 CRND1201 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 255 CRND1301 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 256 CRND1401 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 257 CRND1501 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 258 CRND1601 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 259 CRND1701 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 260 CRND9001 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 261 CRND9101 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 262 CRND9201 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 263 CRND9301 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 264 CRND9401 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 265 CRND9501 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 266 CRND9601 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 267 CRND9701 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 268 CRND9801 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 269 CRND9901 WTH CRND                         47.509  -99.132  1561   4.5  32.7 -99
+ 270 CSKA7102 WTH CSIRO,Katherine,N.T.,Aust    -14.50   132.50   -99   -99   -99   -
+ 271 CSKU8201 WTH Kunnunurra,Australia         -15.39   128.43   -99   -99   -99   -
+ 272 DIJY9001 WTH Jyndevad                     54.900    9.130    16   8.1   7.8 -99
+ 273 DIJY9101 WTH Jyndevad                     54.900    9.130    16   8.1   7.8 -99
+ 274 DIJY9201 WTH Jyndevad                     54.900    9.130    16   8.1   7.8 -99
+ 275 DIJY9301 WTH Jyndevad                     54.900    9.130    16   8.1   7.8 -99
+ 276 DTCM6301 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 277 DTCM6401 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 278 DTCM6501 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 279 DTCM6601 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 280 DTCM6701 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 281 DTCM6801 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 282 DTCM6901 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 283 DTCM7001 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 284 DTCM7101 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 285 DTCM7201 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 286 DTCM7301 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 287 DTCM7401 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 288 DTCM7501 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 289 DTCM7601 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 290 DTCM7701 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 291 DTCM7801 WTH dtcm                         19.010   99.010     0   0.0  11.8   0
+ 292 DTSP8501 WTH SUPHEN_BURI,THAILAND         14.470   100.10   -99  28.0   5.0   -
+ 293 EADA9701 WTH Ada, Ethiopia, NASA POWER     8.800   39.633  1860  19.6   3.3 -99
+ 294 EBCH8301 WTH CPAC-EMBRAPA_CHAPADA_PLAN   -15.590  -47.700  1145  21.1   6.0 -99
+ 295 EBCH8401 WTH CPAC-EMBRAPA_CHAPADA_PLAN   -15.590  -47.700  1145  21.1   1.6 -99
+ 296 EBCH8501 WTH CPAC-EMBRAPA_CHAPADA_PLAN   -15.590  -47.700  1145  21.1   1.6 -99
+ 297 EBCH8601 WTH CPAC-EMBRAPA_CHAPADA_PLAN   -15.590  -47.700  1145  21.1   1.6 -99
+ 298 EBCH8701 WTH CPAC-EMBRAPA_CHAPADA_PLAN   -15.590  -47.700  1145  21.1   1.6 -99
+ 299 EBCH8801 WTH CPAC-EMBRAPA_CHAPADA_PLAN   -15.590  -47.700  1145  21.1   1.6 -99
+ 300 EBGO8701 WTH CNPAF,GOIANIA,BRAZIL         -16.38   -49.13   -99   -99   -99   -
+ 301 EBPL8601 WTH CPAC-EMBRAPA_MAIN_PLANALT   -15.590  -47.710  1000  21.9   5.0 -99
+ 302 EBPL8701 WTH CPAC-EMBRAPA_MAIN_PLANALT   -15.590  -47.710  1000  21.9   6.0 -99
+ 303 EGAR0201 WTH Gare Arera, Ethiopia, CHI     9.050   38.500  2000  15.4   2.9 -99
+ 304 EGAR0301 WTH Gare Arera, Ethiopia, CHI     9.050   38.500  2000  15.4   2.9 -99
+ 305 EJAM1101 WTH Jamma District, Ethiopia,    10.450   39.250  2630  14.9   3.1 -99
+ 306 EMSC1701 WTH EMSC                        -21.783  -47.833   860  22.3   5.4 -99
+ 307 EMSC1801 WTH EMSC                        -21.783  -47.833   860  22.3   5.4 -99
+ 308 EMSC1901 WTH EMSC                        -21.783  -47.833   860  22.3   5.4 -99
+ 309 EN019801 WTH ENVIROTRON CHAMBERS 1&2      00.000  -84.284  299.    .0    .0   2
+ 310 EN039801 WTH ENVIROTRON CHAMBERS 3&4      00.000  -84.284  299.    .0    .0   2
+ 311 EN059801 WTH ENVIROTRON CHAMBERS 5&6      00.000  -84.284  299.    .0    .0   2
+ 312 ESPN1603 WTH Cordoba, Spain               37.900   -4.800   106  18.9  19.7 -99
+ 313 ETMK0801 WTH Mekelle, Ethiopia, 2008-2    13.050   39.100  1911  21.5   5.4 -99
+ 314 ETMK0901 WTH Mekelle, Ethiopia, 2008-2    13.050   39.100  1911  21.5   5.4 -99
+ 315 ETON1101 WTH Ofla District 2011 NASA P    12.533   39.504  2450  20.5   3.9 -99
+ 316 FASH9702 WTH FasholaNigeria                7.900    3.770   230  26.9   2.2 -99
+ 317 FIBR1986 WTH FIBR1986                     45.700   25.530   534       -99.0    
+ 318 FIBR1987 WTH FIBR1987                     45.700   25.530   534       -99.0    
+ 319 FIBR1988 WTH FIBR1988                     45.700   25.530   534       -99.0    
+ 320 FIBR1989 WTH FIBR1989                     45.700   25.530   534       -99.0    
+ 321 FIBR1990 WTH FIBR1990                     45.700   25.530   534       -99.0    
+ 322 FIBR1991 WTH FIBR1991                     45.700   25.530   534       -99.0    
+ 323 FIBR1992 WTH FIBR1992                     45.700   25.530   534       -99.0    
+ 324 FIBR1993 WTH FIBR1993                     45.700   25.530   534       -99.0    
+ 325 FIBR8601 WTH Brasov_Romania               45.700   25.530   534   7.9  13.5 -99
+ 326 FIBR8701 WTH Brasov_Romania               45.700   25.530   534   7.9  13.5 -99
+ 327 FIBR8801 WTH Brasov_Romania               45.700   25.530   534   7.9  13.5 -99
+ 328 FIBR8901 WTH Brasov_Romania               45.700   25.530   534   7.9  13.5 -99
+ 329 FIBR9001 WTH Brasov_Romania               45.700   25.530   534   7.9  13.5 -99
+ 330 FIBR9101 WTH Brasov_Romania               45.700   25.530   534   7.9  13.5 -99
+ 331 FIBR9201 WTH Brasov_Romania               45.700   25.530   534   7.9  13.5 -99
+ 332 FIBR9301 WTH Brasov_Romania               45.700   25.530   534   7.9  13.5 -99
+ 333 FLMI5301 WTH Milton_Expt.Stn.,Florida     30.780  -87.130    67  19.8   8.2  1.
+ 334 FLMI5401 WTH Milton_Expt.Stn.,Florida     30.780  -87.130    67  19.8   8.2  1.
+ 335 FLMI5501 WTH Milton_Expt.Stn.,Florida     30.780  -87.130    67  19.8   8.2  1.
+ 336 FLSC8101 WTH Florence, South Carolina       34.0    -80.0     0 -99.0 -99.0    
+ 337 FNUS0901 WTH Fallon, NV, USA, 2009 and    39.457 -118.781  1209   9.8  29.9 -99
+ 338 GAAL9626 WTH ALMA,GEORGIA,USA            GAAL   31.560  -82.510    60  19.5    
+ 339 GAAT9626 WTH ATTAPULGUS,GEORGIA,USA      GAAT   30.761  -84.485    37  19.5    
+ 340 GABL9626 WTH BLAIRSVILLE,GEORGIA,USA     GABL   34.839  -83.928   584  13.7    
+ 341 GACA9626 WTH CALHOUN,GEORGIA,USA         GACA   34.490  -84.966   200  15.9    
+ 342 GACM9824 WTH CAMILLA,GEORGIA,USA         GACM   31.288  -84.243    50  19.5    
+ 343 GAGR9626 WTH GRIFFIN,GEORGIA,USA         GAGR   33.262  -84.284   299  16.9    
+ 344 GAPL9626 WTH PLAINS,GEORGIA,USA          GAPL   32.047  -84.371   152  18.4    
+ 345 GATI9626 WTH TIFTON,GEORGIA,USA          GATI   31.483  -83.533   116  19.4    
+ 346 GAWI9626 WTH WILLIAMSON,GEORGIA,USA      GAWI   33.176  -84.407   253  16.6    
+ 347 GAWU9626 WTH WATKINSVILLE,GEORGIA,USA    GAWU   33.869  -83.450   229  16.8    
+ 348 GHNY9701 WTH NYANKPALA,TAMALE,GHANA        9.420   -0.920   184  28.0   2.6   1
+ 349 GHNY9801 WTH NYANKPALA,TAMALE,GHANA        9.420   -0.920   184  28.0   2.6   1
+ 350 GHWA0201 WTH WA,GHANA                     10.020   -2.382   184  28.0   2.6   1
+ 351 GHWA0301 WTH WA,GHANA                     10.020   -2.382   184  28.0   2.6   1
+ 352 GHWA0401 WTH WA,GHANA                     10.020   -2.382   184  28.0   2.6   1
+ 353 GHWA9601 WTH WA,GHANA                     10.020   -2.382   184  28.0   2.6   1
+ 354 GHWA9701 WTH WA,GHANA                     10.020   -2.382   184  28.0   2.6   1
+ 355 GHWA9801 WTH WA,GHANA                     10.020   -2.382   184  28.0   2.6   1
+ 356 GRCO0801 WTH GRCO0801 Greeley 4, Color    40.449 -104.638  1427   0.0   0.0 -99
+ 357 GRCO1001 WTH GRCO1001 Greeley 4, Color    40.449 -104.638  1427   0.0   0.0 -99
+ 358 HHIH8201 WTH HOHENHEIM,STUTTGART,GERMA     48.00     9.22   -99   -99   -99   -
+ 359 IBHK8901 WTH IBHK                          22.00  -157.00        20.0   2.1    
+ 360 IBHK9001 WTH IBHK                          22.00  -157.00        20.0   2.0    
+ 361 IBHK9101 WTH IBHK                          22.00  -157.00                      
+ 362 IBHK9201 WTH IBHK                          22.00  -157.00                      
+ 363 IBHK9301 WTH IBHK                          22.00  -157.00                      
+ 364 IBHK9401 WTH IBHK                          22.00  -157.00                      
+ 365 IBHK9501 WTH IBHK                          22.00  -157.00                      
+ 366 IBKA9701 WTH IBKA                         20.780 -156.376   -99 -99.0 -99.0   1
+ 367 IBKA9801 WTH IBKA                         20.780 -156.376   -99 -99.0 -99.0   1
+ 368 IBMC9601 WTH MAUKA CAMPUS, UNIV. OF H     21.260 -157.810   100  24.1   2.1   -
+ 369 IBMC9701 WTH MAUKA CAMPUS, UNIV. OF H     21.260 -157.810   100  24.1   2.1   -
+ 370 IBPF8601 WTH PULEHU EXP. FARM, MAUI, H    20.770 -156.330   -99   -99   -99   -
+ 371 IBPF8701 WTH PULEHU EXP FARM, MAUI, HI    20.770 -156.330   -99   -99   -99   -
+ 372 IBSI8001 WTH SITIUNG,INDONESIA             -2.00   102.00	       8.9           
+ 373 IBSI8101 WTH SITIUNG,INDONESIA             -2.00   102.00               8.9    
+ 374 IBSI8201 WTH SITIUNG,INDONESIA             -2.00   102.00               8.9    
+ 375 IBSI8301 WTH SITIUNG,INDONESIA             -2.00   102.00               8.9    
+ 376 IBSI8401 WTH SITIUNG,INDONESIA             -2.00   102.00               8.9    
+ 377 IBSI8501 WTH SITIUNG,INDONESIA             -2.00   102.00               8.9    
+ 378 IBWA8302 WTH WAIPIO,HAWAII                 21.00  -158.00   -99   -99   -99   -
+ 379 IBWM9101 WTH IBWM                          22.00  -158.00    20  25.0   5.0   -
+ 380 IEBR8201 WTH IEBR8201                      35.20    37.10   390  17.3  20.3    
+ 381 IEBR8301 WTH IEBR8301                      35.20    37.10   390  17.3  20.3    
+ 382 IEJI8001 WTH Jindiress,Syria               36.50    36.69                      
+ 383 IEJI8201 WTH Jindiress,Syria               36.50    36.69                      
+ 384 IEKH8001 WTH Khanasser,Syria               35.10     37.5                      
+ 385 IEKH8101 WTH Khanasser,Syria               35.10     37.5                      
+ 386 IETH7901 WTH Tel_Hadya,Syria               35.00    36.90                      
+ 387 IETH8001 WTH Tel_Hadya,Syria               35.60    36.90                      
+ 388 IETH8002 WTH TEL_HADYA,SYRIA               36.00    36.90                      
+ 389 IGQU8901 WTH ICTA,QUEZADA,GUATEMALA        14.27   -90.03   -99   -99   -99   -
+ 390 IHUH1701 WTH IHUH Uni Hohenheim Ihinge    48.666    8.967   490   9.3  19.8   2
+ 391 IICS9701 WTH Iics,Nigeria                   7.50     3.90   243 -99.0 -99.0 -99
+ 392 INDA1603 WTH ICARDA, Bheel Khedi Sadak    23.110   76.880   527  25.5  17.4 -99
+ 393 IRCH0302 WTH IRCH                         39.930  116.470    31  12.8  14.6 -99
+ 394 IRIW8501 WTH IRIW                         14.200  121.200     0   0.0   0.0   0
+ 395 IRIW8601 WTH IRIW                         14.200  121.200     0   0.0   0.0   0
+ 396 IRIW8701 WTH IRIW                         14.200  121.200     0   0.0   0.0   0
+ 397 IRIW8801 WTH IRIW                         14.200  121.200     0   0.0   0.0   0
+ 398 IRIW8901 WTH IRIW                         14.200  121.200     0   0.0   0.0   0
+ 399 IRIW9001 WTH IRIW                         14.200  121.200     0   0.0   0.0   0
+ 400 IRIW9101 WTH IRIW                         14.200  121.200     0   0.0   0.0   0
+ 401 IRIW9201 WTH IRIW                         14.200  121.200     0   0.0   0.0   0
+ 402 IRLB9201 WTH Los Banos, Phillipines       14.183  121.250    21  27.1   2.1   2
+ 403 IRMZ8501 WTH IRRI,MUNOZ,PHILIPPINES       15.70    120.90   -99   -99   -99   -
+ 404 IRMZ8601 WTH IRRI,MUNOZ,PHILIPPINES       15.70    120.90   -99  27.0   4.3   -
+ 405 IRPI8001 WTH IRRI,PILA,PHILIPPINES        14.20    121.30    50  27.0   3.8   -
+ 406 IRPI8501 WTH IRRI,PILA,PHILIPPINES        14.20    121.30    50  27.0   3.8   -
+ 407 IRPI8601 WTH IRRI,PILA,PHILIPPINES        14.20    121.30    50  27.0   3.8   -
+ 408 IRWE8501 WTH Las Banos, Laguna, IRRI      14.180  121.250    21  28.0   3.0   0
+ 409 IRWE8601 WTH Las Banos, Laguna, IRRI      14.180  121.250    21  28.0   3.0   0
+ 410 IRWE8701 WTH Las Banos, Laguna, IRRI      14.180  121.250    21  28.0   3.0   0
+ 411 IRWE8801 WTH Las Banos, Laguna, IRRI      14.180  121.250    21  28.0   3.0   0
+ 412 IRWE8901 WTH Las Banos, Laguna, IRRI      14.180  121.250    21  28.0   3.0   0
+ 413 IRWE9001 WTH Las Banos, Laguna, IRRI      14.180  121.250    21  28.0   3.0   0
+ 414 IRWE9101 WTH Las Banos, Laguna, IRRI      14.180  121.250    21  28.0   3.0   0
+ 415 IRWE9201 WTH Las Banos, Laguna, IRRI      14.180  121.250    21  28.0   3.0   0
+ 416 IRWE9301 WTH Las Banos, Laguna, IRRI      14.180  121.250    21  28.0   3.0   0
+ 417 IRWE9401 WTH Las Banos, Laguna, IRRI      14.180  121.250    21  28.0   3.0   0
+ 418 IRWE9501 WTH Las Banos, Laguna, IRRI      14.180  121.250    21  28.0   3.0   0
+ 419 IRWE9601 WTH Las Banos, Laguna, IRRI      14.180  121.250    21  28.0   3.0   0
+ 420 IRWE9701 WTH Las Banos, Laguna, IRRI      14.180  121.250    21  28.0   3.0   0
+ 421 IRWE9801 WTH IRRI WETLAND SITE, 1998 D    14.110  121.150  21.0  27.0   3.8 -99
+ 422 ITAL1603 WTH Bernalda, Province of Mat    40.390   16.780     4  17.4  17.6 -99
+ 423 ITCH0001 WTH Chinh, HoaBinh, Vietnam      20.490  105.770     0 -99.0 -99.0 -99
+ 424 ITCH9501 WTH Chinh, HoaBinh, Vietnam      20.490  105.770     0 -99.0 -99.0 -99
+ 425 ITCH9601 WTH Chinh, HoaBinh, Vietnam      20.490  105.770     0 -99.0 -99.0 -99
+ 426 ITCH9801 WTH Chinh, HoaBinh, Vietnam      20.490  105.770     0 -99.0 -99.0 -99
+ 427 ITCH9901 WTH Chinh, HoaBinh, Vietnam      20.490  105.770     0 -99.0 -99.0 -99
+ 428 ITDE6501 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 429 ITDE6601 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 430 ITDE6701 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 431 ITDE6801 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 432 ITDE6901 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 433 ITDE7001 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 434 ITDE7101 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 435 ITDE7201 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 436 ITDE7301 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 437 ITDE7401 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 438 ITDE7501 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 439 ITDE7601 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 440 ITDE7701 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 441 ITDE7801 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 442 ITDE7901 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 443 ITDE8001 WTH ITDE                         28.630   77.200     0   0.0   0.0   0
+ 444 ITHY7501 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 445 ITHY7601 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 446 ITHY7701 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 447 ITHY7801 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 448 ITHY7901 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 449 ITHY8001 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 450 ITHY8101 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 451 ITHY8201 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 452 ITHY8301 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 453 ITHY8401 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 454 ITHY8501 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 455 ITHY8601 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 456 ITHY8701 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 457 ITHY8801 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 458 ITHY8901 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 459 ITHY9001 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 460 ITHY9101 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 461 ITHY9201 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 462 ITHY9301 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 463 ITHY9401 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 464 ITHY9501 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 465 ITHY9601 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 466 ITHY9701 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 467 ITHY9801 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 468 ITHY9901 WTH Hyderabad,India              17.530   78.270     0  25.8  11.8   2
+ 469 ITIN0301 WTH NRCS, INDORE, ADB Collabo    22.400   75.500   567  25.7   6.4 -99
+ 470 ITIN0401 WTH NRCS, INDORE, ADB Collabo    22.400   75.500   567  25.7   6.4 -99
+ 471 ITPU8901 WTH Pune,India                    18.52    73.85                      
+ 472 ITSC8601 WTH Sahelian_Center,Niger         13.28     2.00                      
+ 473 IUAF8001 WTH I.S.U. Agron Farm, Story     42.020  -93.800     0   9.1  15.5  1.
+ 474 IUAF8002 WTH I.S.U. Agron Farm, Story     42.020  -93.800     0   9.1  15.5  1.
+ 475 IUAF8101 WTH I.S.U. Agron Farm, Story     42.020  -93.800     0   9.1  15.5  1.
+ 476 IUAF8201 WTH I.S.U. Agron Farm, Story     42.020  -93.800     0   9.1  15.5  1.
+ 477 IUAF8301 WTH I.S.U. Agron Farm, Story     42.020  -93.800     0   9.1  15.5  1.
+ 478 IUAF8401 WTH I.S.U. Agron Farm, Story     42.020  -93.800     0   9.1  15.5  1.
+ 479 IUAF8501 WTH I.S.U. Agron Farm, Story     42.020  -93.800     0   9.1  15.5  1.
+ 480 IUAF8601 WTH I.S.U. Agron Farm, Story     42.020  -93.800     0   9.1  15.5  1.
+ 481 IUAF8701 WTH I.S.U. Agron Farm, Story     42.020  -93.800     0   9.1  15.5  1.
+ 482 IUAF8801 WTH I.S.U. Agron Farm, Story     42.020  -93.800     0   9.1  15.5  1.
+ 483 IUAF8901 WTH I.S.U. Agron Farm, Story     42.020  -93.800     0   9.1  15.5  1.
+ 484 IUAF9001 WTH I.S.U. Johnson Farm, Stor    41.590  -93.380     0   9.1  15.5  1.
+ 485 IUAF9101 WTH I.S.U. Johnson Farm, Stor    41.590  -93.380     0   9.1  15.5  1.
+ 486 IUAF9201 WTH I.S.U. Johnson Farm, Stor    41.590  -93.380   320   9.1  15.5  1.
+ 487 IUAF9301 WTH I.S.U. Johnson Farm, Stor    41.590  -93.380     0   9.1  15.5  1.
+ 488 IUAF9401 WTH Ames,Iowa,USA                42.000  -93.770   320 -99.0 -99.0   2
+ 489 IUAF9501 WTH Ames,IA                      42.000  -93.770   320 -99.0 -99.0   2
+ 490 IUAF9601 WTH Ames,IA                      42.000  -93.770   320   9.1  15.5  1.
+ 491 IUAF9701 WTH AMES, IA (AERC)              42.000  -93.770   320   9.1  15.5  1.
+ 492 IUAF9901 WTH AMES, IA, U.S.A.             42.020  -93.750   335   9.1  15.5  1.
+ 493 IUAM8801 WTH Ames,Iowa,USA                 42.00   -93.50     0   9.1  15.5  1.
+ 494 IUAM9001 WTH Ames,Iowa,USA                 42.00   -93.50     0   9.1  15.5  1.
+ 495 IUAM9701 WTH Swine Res. Farms (Armstro    42.000  -93.770   320   9.1  15.5   2
+ 496 IUAM9702 WTH Sorenson Farms, near Ames    42.000  -93.770   320   9.1  15.5   2
+ 497 IUCA7901 WTH CASTANA,IOWA,USA             42.20   -93.70    -99   9.1  15.5  1.
+ 498 IUCA7902 WTH CASTANA,IOWA,USA             42.20   -93.700   425   9.9  15.9   1
+ 499 KADO7701 WTH KADO                        -18.320   29.880     0   0.0   0.0   0
+ 500 KADO7801 WTH KADO                        -18.320   29.880     0   0.0   0.0   0
+ 501 KADO7901 WTH KADO                        -18.320   29.880     0   0.0   0.0   0
+ 502 KADO8001 WTH KADO                        -18.320   29.880     0   0.0   0.0   0
+ 503 KADO8101 WTH KADO                        -18.320   29.880     0   0.0   0.0   0
+ 504 KADO8201 WTH KADO                        -18.320   29.880     0   0.0   0.0   0
+ 505 KADO8301 WTH KADO                        -18.320   29.880     0   0.0   0.0   0
+ 506 KADO8401 WTH KADO                        -18.320   29.880     0   0.0   0.0   0
+ 507 KADO8501 WTH KADO                        -18.320   29.880     0   0.0   0.0   0
+ 508 KADO8601 WTH KADO                        -18.320   29.880     0   0.0   0.0   0
+ 509 KADO8701 WTH KADO                        -18.320   29.880     0   0.0   0.0   0
+ 510 KADO8801 WTH KADO                        -18.320   29.880     0   0.0   0.0   0
+ 511 KADO8901 WTH KADO                        -18.320   29.880     0   0.0   0.0   0
+ 512 KADO9001 WTH KADO                        -18.320   29.880     0   0.0   0.0   0
+ 513 KSAS8101 WTH KSAS8101                      37.18   -99.75   226  12.0  32.0    
+ 514 KSAS8201 WTH KSAS8201                      37.18   -99.75   226  12.0  32.0    
+ 515 LUGO9001 WTH LUGO                          43.00     6.20   480  11.9   6.3   1
+ 516 LUGO9101 WTH LUGO                          43.00     6.20   480  11.9   6.3   1
+ 517 LUGO9201 WTH LUGO                          43.00     6.20   480  11.9   6.3   1
+ 518 LUGO9301 WTH LUGO                          43.00     6.20   480  11.9   6.3   1
+ 519 LUGO9501 WTH LUGO                          43.00     6.20   480  11.9   6.3   1
+ 520 LUGO9601 WTH LUGO                          43.00     6.20   480  11.9   6.3   1
+ 521 LUGO9801 WTH LUGO                         43.000    3.300   480  11.8   6.0 -99
+ 522 LUSK2101 WTH Pontiac, Quebec, Canada      45.467  -75.917   106   2.0  33.2   2
+ 523 MAR29501 WTH MARICOPA WEATHER STATION,    33.069 -111.972   361 -99.0 -99.0 -99
+ 524 MAR29601 WTH MARICOPA WEATHER STATION,    33.069 -111.972   361 -99.0 -99.0 -99
+ 525 MEKN2003 WTH Meknes, Morocco              33.843    5.478   546  23.2  24.5   2
+ 526 MONT1201 WTH MON1                         47.000    5.000   300  15.1  20.4 -99
+ 527 MONT1301 WTH MONT                         34.000    0.983   360  15.0  18.6 -99
+ 528 MONT1401 WTH MONT                         34.000    0.983   360  15.0  18.6 -99
+ 529 MONT1501 WTH MONT                         34.000    0.983   360  15.0  18.6 -99
+ 530 MONT1601 WTH MONT                         34.000    0.983   360  15.0  18.6 -99
+ 531 MONT1701 WTH MONT                         34.000    0.983   360  15.0  18.6 -99
+ 532 MORO1603 WTH Marchouch, Morocco           33.620   -6.720   453  18.1  14.7 -99
+ 533 MSKB0001 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 534 MSKB0101 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 535 MSKB0201 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 536 MSKB0301 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 537 MSKB0401 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 538 MSKB0501 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 539 MSKB0601 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 540 MSKB0701 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 541 MSKB0801 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 542 MSKB0901 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 543 MSKB1001 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 544 MSKB1101 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 545 MSKB1201 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 546 MSKB1301 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 547 MSKB1401 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 548 MSKB1501 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 549 MSKB1601 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 550 MSKB1701 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 551 MSKB8401 WTH KBS-MSU                      41.700  -85.500   285   9.2  13.0 -99
+ 552 MSKB8501 WTH KBS-MSU                      41.700  -85.500   285   9.2  13.0 -99
+ 553 MSKB8601 WTH KBS-MSU                      41.700  -85.500   285   9.2  13.0 -99
+ 554 MSKB8701 WTH KBS-MSU                      41.700  -85.500   285   9.2  13.0 -99
+ 555 MSKB8801 WTH KBS-MSU                      41.700  -85.500   285   9.2  13.0 -99
+ 556 MSKB8901 WTH KBS-MSU                      41.700  -85.500   285   9.2  13.0 -99
+ 557 MSKB9001 WTH KBS-MSU                      41.700  -85.500   285   9.2  13.0 -99
+ 558 MSKB9101 WTH KBS-MSU                      41.700  -85.500   285   9.2  13.0 -99
+ 559 MSKB9201 WTH KBS-MSU                      41.700  -85.500   285   9.2  13.0 -99
+ 560 MSKB9301 WTH KBS-MSU                      41.700  -85.500   285   9.2  13.0 -99
+ 561 MSKB9401 WTH KBS-MSU                      41.700  -85.500   285   9.2  13.0 -99
+ 562 MSKB9501 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 563 MSKB9601 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 564 MSKB9701 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 565 MSKB9801 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 566 MSKB9901 WTH KellogeBiologicalStation,    41.700  -85.500   200   9.2  13.0 -99
+ 567 MSMU7901 WTH The_Murrays,Scotland          56.00     0.00   -99   -99   -99   -
+ 568 MSMU8001 WTH The_Murrays,Scotland          56.00     0.00   -99   -99   -99   -
+ 569 MTBO7701 WTH MTBO7701                      48.00   -109.0   760   5.6  31.2    
+ 570 MTIS8901 WTH MTIS                          18.50   -67.00                      
+ 571 MTIS9001 WTH MTIS                          18.50   -67.00                      
+ 572 MTIS9101 WTH MTIS                          18.50   -67.00                      
+ 573 MTIS9201 WTH MTIS                          18.50   -67.00                      
+ 574 MTIS9301 WTH MTIS                          18.50   -67.00                      
+ 575 NCCL8801 WTH NCCL                          35.94    -78.5                      
+ 576 NCRM8701 WTH NCRM                          35.66    -77.8                      
+ 577 NEPL1603 WTH Motipur, Nepal              NEPL   28.250   81.500   159  20.5    
+ 578 NITL1101 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 579 NITL1201 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 580 NITL1301 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 581 NITL1401 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 582 NITL1501 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 583 NITL1601 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 584 NITL1701 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 585 NITL1801 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 586 NITL1901 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 587 NITL2001 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 588 NITL2101 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 589 NITL2201 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 590 NITL2301 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 591 NITL2401 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 592 NITL2501 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 593 NITL2601 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 594 NITL2701 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 595 NITL2801 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 596 NITL2901 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 597 NITL3001 WTH TILLABERY,                   14.200    1.450   209   0.0   0.0  0.
+ 598 NMCL1402 WTH NMCL1401, Clovis, NM           34.1 -103.367 1352.   8.5  24.4    
+ 599 NMLC1402 WTH LCNM1401, Las Cruces, NM     32.267  -106.75 1183.  10.4  24.5    
+ 600 NORT1903 WTH Northern Agriculture Rese    48.490 -109.800   300   7.4  31.1   2
+ 601 NOTH1201 WTH NOTH                         45.400  -80.117   300   6.0  15.0 -99
+ 602 NOTH1301 WTH NOTH                         45.400  -80.117   300   3.2  17.4 -99
+ 603 NOTH1401 WTH New_Location                 33.300  -84.300   300   2.6  32.5 -99
+ 604 NYCU8001 WTH NYCU                          42.70   -97.00   -99   8.5   8.6   -
+ 605 NYCU8101 WTH NYCU                          42.70   -97.00   -99   8.5   8.6   -
+ 606 NYCU8201 WTH NYCU                          42.70   -97.00   -99   8.5   8.6   -
+ 607 NYCU8501 WTH NYCU                          42.70   -97.00   -99   8.5   8.6   -
+ 608 NYCU8601 WTH NYCU                          42.70   -97.00   -99   8.5   8.6   -
+ 609 OHWO8801 WTH WOOSTER,OHIO,USA              40.78   -81.93     0   9.1  15.5  1.
+ 610 OHWO9001 WTH WOOSTER,OHIO,USA              40.78   -81.93     0   9.1  15.5  1.
+ 611 OSBO8801 WTH OSBO                          45.83  -119.28   -99  11.0   9.0   -
+ 612 OTWA1304 WTH Ottowa, Canada               45.283  -75.767    71   6.7  31.0 -99
+ 613 PARA1801 WTH Paragominas, Para, Brazil    -3.383  -47.417   176  27.0   6.0 -99
+ 614 PARA1901 WTH Paragominas, Para, Brazil    -3.383  -47.417   176  27.0   6.0 -99
+ 615 PBCA7701 WTH Cambridge,England             52.50     0.00   -99   -99   -99   -
+ 616 PIR21601 WTH Piracicaba (SP2), Brazil    PIR2  -22.725   47.648   524  22.8    
+ 617 PIR21701 WTH Piracicaba (SP2), Brazil    PIR2  -22.725   47.648   524  22.8    
+ 618 PIR21801 WTH Piracicaba (SP2), Brazil    PIR2  -22.725   47.648   524  22.8    
+ 619 PIR21901 WTH Piracicaba (SP2), Brazil    PIR2  -22.725   47.648   524  22.8    
+ 620 PIR22001 WTH Piracicaba (SP2), Brazil    PIR2  -22.725   47.648   524  22.8    
+ 621 PLAP8801 WTH Portage_la_Prairie,Manito    50.000  -98.500     0 -99.0 -99.0 -99
+ 622 PLAP9201 WTH Portage_la_Prairie,Manito    50.000  -98.500     0 -99.0 -99.0 -99
+ 623 PONG8601 WTH PONG                        -27.383   31.617   300  23.0  12.0   2
+ 624 PONG8701 WTH PONG                        -27.383   31.617   300  23.0  12.0   2
+ 625 PONG8801 WTH PONG                        -27.383   31.617   300  23.0  12.0   2
+ 626 PONG8901 WTH PONG                        -27.383   31.617   300  23.0  12.0   2
+ 627 POST1903 WTH Post Agronomy Farm, Bozem    45.680 -111.150   300   3.3  28.5   2
+ 628 PULU0001 WTH LUDHIANA,INDIA              30.550    75.510   247 -99.0 -99.     
+ 629 PULU0101 WTH LUDHIANA,INDIA              30.550    75.510   247 -99.0 -99.     
+ 630 QDKY1101 WTH Kingaroy, Queensland, Aus   -26.582  151.829   441  17.8  13.7 -99
+ 631 QDKY1201 WTH Kingaroy, Queensland, Au    -26.582  151.829   441  18.0  12.0 -99
+ 632 ROR15901 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 633 ROR16001 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 634 ROR16101 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 635 ROR16201 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 636 ROR16301 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 637 ROR16401 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 638 ROR16501 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 639 ROR16601 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 640 ROR16701 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 641 ROR16801 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 642 ROR16901 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 643 ROR17001 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 644 ROR17101 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 645 ROR17201 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 646 ROR17301 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 647 ROR17401 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 648 ROR17501 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 649 ROR17601 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 650 ROR17701 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 651 ROR17801 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 652 ROR17901 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 653 ROR18001 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 654 ROR18101 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 655 ROR18201 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 656 ROR18301 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 657 ROR18401 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 658 ROR18501 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 659 ROR18601 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 660 ROR18701 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 661 ROR18801 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 662 ROR18901 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 663 ROR19001 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 664 ROR19101 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 665 ROR19201 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 666 ROR19301 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 667 ROR19401 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 668 ROR19501 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 669 ROR19601 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 670 ROR19701 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 671 ROR19801 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 672 ROR19901 WTH Rothamsted,England           52.500   -0.500   100   9.9   6.1   0
+ 673 RORO6701 WTH Rothamsted,England            52.50   -0.500   100   9.9   8.4   0
+ 674 RORO7201 WTH Rothamsted,England            52.50   -0.500   100   9.9   8.4   0
+ 675 RORO7401 WTH RORO7401                      51.82    -0.36   128   9.9   8.4    
+ 676 RORO7501 WTH RORO7501                      51.82    -0.36   128   9.9   8.4    
+ 677 RORO7601 WTH Rothamsted,England            52.50   -0.500   100   9.9   8.4   0
+ 678 RORO7901 WTH Rothamsted,England            52.50   -0.500   100   9.9   8.4   0
+ 679 SA068135 WTH Saskatoon, Saskatchewan,     52.150 -106.600   497   3.2  33.4   2
+ 680 SAPO6701 WTH Pongola,KwaZulu-Natal,Sou   -27.000   30.000   100  20.9   5.0   2
+ 681 SAPO6801 WTH Pongola,KwaZulu-Natal,Sou   -27.000   30.000   100  20.9   5.0   2
+ 682 SAPO6901 WTH Pongola,KwaZulu-Natal,Sou   -27.000   30.000   100  20.9   5.0   2
+ 683 SAPO7001 WTH Pongola,KwaZulu-Natal,Sou   -27.000   30.000   100  20.9   5.0   2
+ 684 SAPO7101 WTH Pongola,KwaZulu-Natal,Sou   -27.000   30.000   100  20.9   5.0   2
+ 685 SAPO7201 WTH Pongola,KwaZulu-Natal,Sou   -27.000   30.000   100  20.9   5.0   2
+ 686 SAPO7301 WTH Pongola,KwaZulu-Natal,Sou   -27.000   30.000   100  20.9   5.0   2
+ 687 SATO8801 WTH TongaatData,SASA            -29.600   30.000   100  20.4   4.1   2
+ 688 SATO8901 WTH TongaatData,SASA            -29.600   30.000   100  20.4   4.1   2
+ 689 SATO9001 WTH TongaatData,SASA            -29.600   30.000   100  20.4   4.1   2
+ 690 SATO9101 WTH TongaatData,SASA            -29.600   30.000   100  20.4   4.1   2
+ 691 SATO9201 WTH TongaatData,SASA            -29.600   30.000   100  20.4   4.1   2
+ 692 SATO9301 WTH TongaatData,SASA            -29.600   30.000   100  20.4   4.1   2
+ 693 SAUR9001 WTH Antioquia,Urrao,Colombia.     6.330  -76.116  1850  20.2   1.8   0
+ 694 SAUR9101 WTH Antioquia,Urrao,Colombia.     6.330  -76.116  1850  20.2   1.8   0
+ 695 SAUR9201 WTH Antioquia,Urrao,Colombia.     6.330  -76.116  1850  20.2   1.8   0
+ 696 SAUR9301 WTH Antioquia,Urrao,Colombia.     6.330  -76.116  1850  20.2   1.8   0
+ 697 SBDR0301 WTH Sutton Bonington, UK         52.500   -1.150    45  22.0 5.0 -99.0
+ 698 SBHT0601 WTH Sutton Bonington, High Te    52.500   -1.150    45   22.0  5.0   2
+ 699 SBHT0701 WTH Sutton Bonington, High Te    52.500   -1.150    45  22.0   5.0   2
+ 700 SBHT0801 WTH Sutton Bonington, High Te    52.500   -1.150    45  22.0 5.0 -99.0
+ 701 SBIR0301 WTH Sutton Bonington, UK         52.500   -1.150    45   22.0 5.0 -99.
+ 702 SBLT0601 WTH Sutton Bonington, Low Tem    52.500   -1.150    45  22.0   5.0   2
+ 703 SBLT0701 WTH Sutton Bonington,Low Temp    52.500   -1.150    45  22.0   5.0   2
+ 704 SBLT0801 WTH Sutton Bonington, Low Tem    52.500   -1.150    45   22.0  5.0 -99
+ 705 SCSV0003 WTH Stewart Valley, Saskatche    50.600 -107.800   707   4.3  29.4   2
+ 706 SIAZ9301 WTH SIAMONTA¥ANA                41.430    0.490   225  14.7   8.6   2
+ 707 SIAZ9401 WTH SIAMONTA¥ANA                41.430    0.490   225  14.7   8.6   2
+ 708 SIAZ9501 WTH SIAMONTA¥ANA                41.430    0.490   225  14.7   8.6   2
+ 709 SIAZ9601 WTH SIAMONTA¥ANA                41.430    0.490   225  14.7   8.6   2
+ 710 SIAZ9801 WTH SIAMONTA¥ANA                41.430    0.490   225  14.7   8.6   2
+ 711 SIAZ9901 WTH SIAMONTA¥ANA                41.430    0.490   225  14.7   8.6   2
+ 712 SKRT1602 WTH Rosthern, Saskatchewan, C    52.690 -106.300   505   2.2  35.0   -
+ 713 SKSL1602 WTH Saskatoon, Saskatchewan,     52.170 -106.510   508   3.7  34.0   -
+ 714 SMKO1401 WTH Samanko 2014                 12.520   -8.070   328  28.5   8.2 -99
+ 715 SMKO1501 WTH Samanko 2015                 12.520   -8.070   328  28.5   8.2 -99
+ 716 SPFA1401 WTH SPFA                       -22.7017 -47.6423   547  21.5   7.1   2
+ 717 SPFA1501 WTH SPFA                       -22.7017 -47.6423   547  21.5   7.1   2
+ 718 SPPI0101 WTH Piracicaba - SP - Estaç�   -22.880  -47.500   560  22.0   3.4   2
+ 719 SPPI0201 WTH Piracicaba - SP - Estaç�   -22.880  -47.500   560  22.0   3.4   2
+ 720 SPPI0301 WTH Piracicaba - SP - Estaç�   -22.880  -47.500   560  22.0   3.4   2
+ 721 SPPI0401 WTH Piracicaba - SP - Estaç�   -22.880  -47.500   560  22.0   3.4   2
+ 722 SPPI1101 WTH SPPI                        -22.708  -47.633   580  22.8   4.1 -99
+ 723 SPPI1201 WTH SPPI                        -22.708  -47.633   580  22.8   4.1 -99
+ 724 SPPI1301 WTH SPPI                        -22.708  -47.633   580  22.8   4.1 -99
+ 725 SS048135 WTH Outlook, Saskatchewan, Ca    51.480 -107.050   541   4.5  31.8   2
+ 726 SWIF2101 WTH Swift Current, Saskatchew    50.267 -107.733   817   4.8  37.8   2
+ 727 SWIF6752 WTH Swift Current, Saskatchew    50.299 -107.299   817   4.0  30.0   2
+ 728 SWSW7501 WTH SWSW7501                      50.26  -107.50   175   2.2  36.0    
+ 729 TARD1501 WTH TARDIENTA, SPAIN             33.300  -84.300   300  14.3  18.2 -99
+ 730 TARD1601 WTH TARDIENTA, SPAIN             33.300  -84.300   300  14.3  18.2 -99
+ 731 TARD1701 WTH TARDIENTA, SPAINNew_Locat    33.300  -84.300   300  14.3  18.2 -99
+ 732 TETE7401 WTH TEMPLE,TEXAS                  31.00   -97.50   -99   -99   -99   -
+ 733 TRKO1501 WTH Konya, Turkey               TRKO   37.984   32.574  1031  12.5    
+ 734 TRKO1601 WTH Konya, Turkey               TRKO   37.984   32.574  1031  12.5    
+ 735 TXAU8401 WTH AUSTIN, TX, USA              30.300  -97.700  189.  20.0  19.7 -99
+ 736 TXAU8501 WTH AUSTIN, TX, USA              30.300  -97.700  189.  20.0  19.7 -99
+ 737 TXAU8601 WTH AUSTIN, TX, USA              30.300  -97.700  189.  20.0  19.7 -99
+ 738 TXBD8401 WTH Temple, Texas                31.056  -97.348   199  19.1  23.6 -99
+ 739 TXCH1106 WTH Chillicothe, Texas, USA      34.000 -102.000   351  18.6  12.6 -99
+ 740 TXCH1901 WTH CHILLLICOTHE                 34.033  -99.083   442  16.9  24.7   2
+ 741 TXCH2001 WTH CHILLICOTHE                  34.000 -102.000   351  17.6  23.6   2
+ 742 TXCH2101 WTH CHILLICOTHE                  34.000 -102.000   315  17.4  27.0   2
+ 743 TXCO7801 WTH Columbas,Texas               29.720  -96.530    65  19.3  10.8  1.
+ 744 TXCO7901 WTH Columbas,Texas               29.720  -96.530    65  19.3  10.8  1.
+ 745 TXCO8001 WTH Columbas,Texas               29.720  -96.530    65  19.3  10.8  1.
+ 746 TXEL7801 WTH TAMU Research Center, Eag    29.617  -96.366    54  20.2  18.5   2
+ 747 TXEL7901 WTH TAMU Research Center, Eag    29.617  -96.366    54  20.2  18.5   2
+ 748 TXEL8001 WTH TAMU Research Center, Eag    29.617  -96.366    54  20.2  18.5   2
+ 749 TXEL8101 WTH TAMU Research Center, Eag    29.617  -96.366    54  20.2  18.5   2
+ 750 UAFD0001 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 751 UAFD0101 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 752 UAFD0201 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 753 UAFD0301 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 754 UAFD0401 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 755 UAFD0501 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 756 UAFD0601 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 757 UAFD0701 WTH Faisalabad                   31.433   73.100   184  24.7  10.7 -99
+ 758 UAFD0801 WTH Faisalabad                   31.035   73.002   184  24.3  11.2 -99
+ 759 UAFD0901 WTH Faisalabad                   31.035   73.002   184 -16.5  10.2 -99
+ 760 UAFD7401 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 761 UAFD7501 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 762 UAFD7601 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 763 UAFD7701 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 764 UAFD7801 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 765 UAFD7901 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 766 UAFD8001 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 767 UAFD8101 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 768 UAFD8201 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 769 UAFD8301 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 770 UAFD8401 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 771 UAFD8501 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 772 UAFD8601 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 773 UAFD8701 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 774 UAFD8801 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 775 UAFD8901 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 776 UAFD9001 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 777 UAFD9101 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 778 UAFD9201 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 779 UAFD9301 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 780 UAFD9401 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 781 UAFD9501 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 782 UAFD9601 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 783 UAFD9701 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 784 UAFD9801 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 785 UAFD9901 WTH FAISALABAD                   31.433   73.100   184  24.1  10.8 -99
+ 786 UBKA8601 WTH KAJONDI_FARM,BURUNDI          -3.29    30.00   -99   -99   -99   -
+ 787 UCCO8101 WTH UCCO                         37.850   -4.800                      
+ 788 UCCO8201 WTH UCCO                         37.850   -4.800                      
+ 789 UCCO8301 WTH UCCO                         37.850   -4.800                      
+ 790 UCCO8401 WTH UCCO                         37.850   -4.800                      
+ 791 UCCO8501 WTH UCCO                         37.850   -4.800                      
+ 792 UCCO8601 WTH UCCO                         37.850   -4.800                      
+ 793 UCCO8701 WTH UCCO                         37.850   -4.800                      
+ 794 UCCO8801 WTH UCCO                         37.850   -4.800                      
+ 795 UCCO8901 WTH UCCO                         37.850   -4.800                      
+ 796 UCCO9101 WTH UCCO                         37.850   -4.800                      
+ 797 UCCO9301 WTH Cordoba, Spain               37.850   -4.800   100  17.7   9.2   1
+ 798 UCEA7701 WTH ELORA,ON,CANADA  DFB  1      43.390  -80.250   376   6.0  27.3  2.
+ 799 UCEA7801 WTH ELORA,ON,CANADA  DFB  1      43.390  -80.250   376   6.0  27.3    
+ 800 UFBA1401 WTH Balm, Florida, USA           27.760  -82.224    39  22.4  12.6 -99
+ 801 UFBA1501 WTH Balm, Florida, USA           27.760  -82.224    39  22.4  12.6 -99
+ 802 UFBA1601 WTH Balm, Florida, USA           27.760  -82.224    39  22.4  12.6 -99
+ 803 UFBA1701 WTH Balm, Florida, USA           27.760  -82.224    39  22.4  12.6 -99
+ 804 UFBA1801 WTH Balm, Florida, USA           27.760  -82.224    39  22.4  12.6 -99
+ 805 UFBG0001 WTH Everglades Research and E    26.650  -80.633     3  22.4   5.0   2
+ 806 UFBG0101 WTH Everglades Research and E    26.650  -80.633     3  22.4   5.0   2
+ 807 UFBG0201 WTH Everglades Research and E    26.650  -80.633     3  22.4   5.0   2
+ 808 UFBG0301 WTH Everglades Research and E    26.650  -80.633     3  22.4   5.0   2
+ 809 UFBG0401 WTH Everglades Research and E    26.650  -80.633     3  22.9   5.1   2
+ 810 UFBG0501 WTH Everglades Research and E    26.650  -80.633     3  22.9   5.1   2
+ 811 UFBG0601 WTH Everglades Research and E    26.650  -80.633     3  22.9   5.1   2
+ 812 UFBG0701 WTH Everglades Research and E    26.650  -80.633     3  22.9   5.1   2
+ 813 UFBG0801 WTH Everglades Research and E    26.650  -80.633     3  22.2   4.6   2
+ 814 UFBG0901 WTH Everglades Research and E    26.650  -80.633     3  22.2   4.6   2
+ 815 UFBR9101 WTH BRADENTON, FLORIDA, U.S.A    27.600  -82.600    10 -99.0 -99.0 -99
+ 816 UFBR9201 WTH BRADENTON, FLORIDA, U.S.A    27.600  -82.600    10 -99.0 -99.0 -99
+ 817 UFBR9301 WTH BRADENTON, FLORIDA, U.S.A    27.600  -82.600    10 -99.0 -99.0 -99
+ 818 UFBR9401 WTH BRADENTON, FLORIDA, U.S.A    27.600  -82.600    10 -99.0 -99.0 -99
+ 819 UFBR9501 WTH BRADENTON, FLORIDA, U.S.A    27.600   82.600    10 -99.0 -99.0 -99
+ 820 UFBR9601 WTH BRAD., FLORIDA, PARTIAL,     27.600   82.600    10 -99.0 -99.0 -99
+ 821 UFCI0201 WTH Plant Science Unit, Citra    29.630  -82.370    10  20.9   7.5  2.
+ 822 UFCI0301 WTH Plant Science Unit, Citra    29.630  -82.370    10  20.9   7.5  2.
+ 823 UFCI0401 WTH Plant Science Unit, Citra    29.410  -82.180    21  21.0  10.7   2
+ 824 UFCI0501 WTH Plant Science Unit, Citra    29.410  -82.180    21  21.0  10.7   2
+ 825 UFCI0601 WTH Plant Science Unit, Citra    29.410  -82.180    21  21.0  10.7   2
+ 826 UFGA0601 WTH Gainesville,Florida,USA      29.630  -82.370    10  21.3  13.0   2
+ 827 UFGA0701 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 828 UFGA2101 WTH UFGA2101 experiment at BR   UFGA   29.803   82.411   160  20.9    
+ 829 UFGA2201 WTH UFGA2101 experiment at BR   UFGA   29.803   82.411   160  20.9    
+ 830 UFGA5801 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 831 UFGA5901 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 832 UFGA6001 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 833 UFGA6101 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 834 UFGA6201 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 835 UFGA6401 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 836 UFGA6501 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 837 UFGA6601 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 838 UFGA6701 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 839 UFGA6801 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 840 UFGA6901 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 841 UFGA7001 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 842 UFGA7101 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 843 UFGA7601 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 844 UFGA7801 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 845 UFGA7901 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 846 UFGA8001 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 847 UFGA8101 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 848 UFGA8201 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 849 UFGA8301 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 850 UFGA8401 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 851 UFGA8501 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 852 UFGA8601 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 853 UFGA8701 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 854 UFGA8901 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 855 UFGA9001 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9  13.0  2.
+ 856 UFGA9601 WTH GAINESVILLE,FLORIDA,USA      29.630  -82.370    10  20.9   7.5  2.
+ 857 UFGR8501 WTH Green_Acres,Newberry,Flor    29.630  -82.370    10  20.9  13.0  2.
+ 858 UFGR8901 WTH Green_Acres,Newberry,Flor    29.630  -82.370    10  20.9  13.0  2.
+ 859 UFGW8801 WTH UFGW                          30.79   -85.25                      
+ 860 UFGW8901 WTH UFGW                          30.79   -85.25                      
+ 861 UFIM9201 WTH IMMOKALEE, FLORIDA, U.S.A    26.390  -81.450    10 -99.0 -99.0 -99
+ 862 UFIP0001 WTH Irrigation Park, Univers     29.630  -82.370    10  20.9   7.5  2.
+ 863 UFIP0101 WTH Irrigation Park, Univers     29.630  -82.370    10 -99.0 -99.0   2
+ 864 UFIP9501 WTH Gainesville,Florida,USA		    29.630  -82.370    10  20.9   7.5  2.
+ 865 UFIP9601 WTH Irrigation Park, Gainesv     29.630  -82.370    10 -99.0 -99.0   2
+ 866 UFIP9701 WTH Irrigation Park, Gainesv     29.630  -82.370    10 -99.0 -99.0   2
+ 867 UFIP9801 WTH Gainesville,Florida,USA      29.630  -82.370    10  20.9   7.5  2.
+ 868 UFJA0219 WTH Jay, Florida                 30.776  -87.138    10  20.2  16.5   2
+ 869 UFJA1701 WTH Jay, Florida                 30.776  -87.138    10  20.2  16.5   2
+ 870 UFMA1401 WTH UFMA                        UFMA   30.850   85.165   115  20.5    
+ 871 UFMA1501 WTH UFMA                        UFMA   30.850   85.165   115  20.5    
+ 872 UFMA1601 WTH UFMA                        UFMA   30.850   85.165   115  20.5    
+ 873 UFMA8301 WTH Marianna, Florida, USA        30.79   -85.25   40.  19.2   8.2 -99
+ 874 UFMX8901 WTH FLMX  Yaqui Valley, Mexic     26.6   -110.40        21.0   2.1    
+ 875 UFMX8902 WTH UFMX  Yaqui Valley, Mexic      26.6   -109.4    38  16.0   7.9 -99
+ 876 UFON9201 WTH Ona, Florida,USA             27.260  -82.550    10  20.9   7.5  2.
+ 877 UFON9301 WTH Ona, Florida,USA             27.260  -82.550    10  20.9   7.5  2.
+ 878 UFON9401 WTH Ona, Florida,USA             27.260  -82.550    10  20.9   7.5  2.
+ 879 UFON9501 WTH Ona, Florida,USA             27.260  -82.550    10  20.9   7.5  2.
+ 880 UFON9601 WTH Ona, Florida,USA             27.260  -82.550    10  20.9   7.5  2.
+ 881 UFON9701 WTH Ona, Florida,USA             27.260  -82.550    10  20.9   7.5  2.
+ 882 UFON9801 WTH Ona, Florida,USA             27.260  -82.550    10  20.9   7.5  2.
+ 883 UFON9911 WTH Ona, Florida, USA            27.398  -81.940   23.  22.1   5.8 -99
+ 884 UFQU1604 WTH UFQU                         30.546  -84.599    10  20.2  16.5   2
+ 885 UFQU1701 WTH UFQU                         30.546  -84.599    10  20.2  16.5   2
+ 886 UFQU1801 WTH UFQU                         30.546  -84.599    10  20.2  16.5   2
+ 887 UFQU1901 WTH UFQU                         30.546  -84.599    10  20.2  16.5   2
+ 888 UFQU7901 WTH QUINCY,FLORIDA,USA            30.60   -86.40   -99   -99   -99   -
+ 889 UFQU9501 WTH QUINCY, FLORIDA, U.S.A, P    30.500   -85.50    10 -99.0 -99.0 -99
+ 890 UFWM1401 WTH Wimauma, Florida, USA        27.767  -82.233    44  21.3  11.6 -99
+ 891 UFWM1501 WTH Wimauma, Florida, USA        27.767  -82.233    44  21.3  11.6 -99
+ 892 UHIH1201 WTH Ihinger Hof, Stuttgart, G   UHIH   48.750    8.917   475   9.6    
+ 893 UHIH1301 WTH Ihinger Hof, Stuttgart, G   UHIH   48.750    8.917   475   9.6    
+ 894 UHIH1401 WTH Ihinger Hof, Stuttgart, G   UHIH   48.750    8.917   475   9.6    
+ 895 UHIH1501 WTH Ihinger Hof, Stuttgart, G   UHIH   48.750    8.917   475   9.6    
+ 896 UHIH1601 WTH Ihinger Hof, Stuttgart, G   UHIH   48.750    8.917   475   9.6    
+ 897 UHIH1701 WTH Ihinger Hof, Stuttgart, G   UHIH   48.750    8.917   475   9.6    
+ 898 UHIH1801 WTH Ihinger Hof, Stuttgart, G   UHIH   48.750    8.917   475   9.6    
+ 899 UHIH1901 WTH Ihinger Hof, Stuttgart, G   UHIH   48.750    8.917   475   9.6    
+ 900 UHIH2001 WTH Ihinger Hof, Stuttgart, G   UHIH   48.750    8.917   475   9.6    
+ 901 UHKN8903 WTH Kunia,Hawaii,USA              20.00  -158.00                      
+ 902 UPIS9601 WTH Isabela, Puerto Rico         18.470  -67.070   131 -99.0 -99.0   1
+ 903 USAM1801 WTH Central Ferry, Washington    46.650 -117.760   196  10.2  25.6 -99
+ 904 USBE0301 WTH Benton, Washington           41.500 -119.500   125 -99.0 -99.0 -99
+ 905 USON0701 WTH Ottana, Sardinia, USON       39.433    9.517   186  16.9   8.6 -99
+ 906 USON0801 WTH Ottana, Sardinia, USON       39.433    9.517   186  16.9   8.6 -99
+ 907 USOT0701 WTH Ottava, Sassari              40.779    8.493    81  15.7   6.6 -99
+ 908 USOT0801 WTH Ottava, Sassari              40.779    8.493    81  15.7   6.6 -99
+ 909 UYLE6601 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 910 UYLE6701 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 911 UYLE6801 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 912 UYLE6901 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 913 UYLE7001 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 914 UYLE7101 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 915 UYLE7201 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 916 UYLE7301 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 917 UYLE7401 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 918 UYLE7501 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 919 UYLE7601 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 920 UYLE7701 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 921 UYLE7801 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 922 UYLE7901 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 923 UYLE8001 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 924 UYLE8101 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 925 UYLE8201 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 926 UYLE8301 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 927 UYLE8401 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 928 UYLE8501 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 929 UYLE8601 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 930 UYLE8701 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 931 UYLE8801 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 932 UYLE8901 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 933 UYLE9001 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 934 UYLE9101 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 935 UYLE9201 WTH UYL0                        -34.000  -57.000    50 -99.0  -9.9  1.
+ 936 WABI5901 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 937 WABI6001 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 938 WABI6101 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 939 WABI6201 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 940 WABI6301 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 941 WABI6401 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 942 WABI6501 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 943 WABI6601 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 944 WABI6701 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 945 WABI6801 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 946 WABI6901 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 947 WABI7001 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 948 WABI7101 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 949 WABI7201 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 950 WABI7301 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 951 WABI7401 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 952 WABI7501 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 953 WABI7601 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 954 WABI7701 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 955 WABI7801 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 956 WABI7901 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 957 WABI8001 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 958 WABI8101 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 959 WABI8201 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 960 WABI8301 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 961 WABI8401 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 962 WABI8501 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 963 WABI8601 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 964 WABI8701 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 965 WABI8801 WTH De Bilt                      52.100    5.200    37  10.1   8.9   0
+ 966 WAPA9201 WTH Paterson, benton county,     45.939 -119.666   180  10.3   7.3 -99
+ 967 WAPA9301 WTH Paterson, benton county,     45.939 -119.666   180  10.4  12.4 -99
+ 968 WAPA9401 WTH Paterson, benton county,     45.939 -119.666   180  12.3  11.1 -99
+ 969 WAPA9501 WTH Paterson, benton county,     45.939 -119.666   180  11.9  10.9 -99
+ 970 WAPU9810 WTH Pullman NE, WA (WSU/  USA    46.779  -117.09   796   8.8  20.1   2
