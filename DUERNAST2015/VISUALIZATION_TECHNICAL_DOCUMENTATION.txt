@@ -1,0 +1,870 @@
+================================================================================
+TECHNICAL DOCUMENTATION: VISUALIZATION PANEL CONSTRUCTION
+DUERNAST 2015 SPRING WHEAT NITROGEN RESPONSE EXPERIMENT
+================================================================================
+
+Document Purpose: This technical documentation provides complete details on how
+each of the 16 visualization panels was constructed, including source files,
+exact column positions, variables extracted, and all calculations performed.
+
+Script: create_duernast_visualizations.py
+Model: N-Wheat (WHAPS048)
+Output: duernast_2015_comprehensive_analysis.png / .pdf
+Total Panels: 16 vertical panels (labeled a through p)
+Treatments: 15 nitrogen treatments (0-180 kg N/ha)
+
+================================================================================
+PANEL A: WEATHER PATTERN (MULTI-VARIABLE DISPLAY)
+================================================================================
+
+Purpose: Show complete weather conditions driving crop growth
+
+Source File: Weather.OUT
+Section: First run section (*RUN   1)
+Data Extraction Method: parse_weather_data() function
+
+Column Definitions from Weather.OUT:
+Header line: @YEAR DOY   DAS   PRED  DAYLD   TWLD   SRAD   PARD   CLDD   TMXD   TMND   TAVD...
+Column positions (0-indexed):
+  Column 2:  DAS  (Days After Sowing)
+  Column 3:  PRED (Daily Precipitation, mm)
+  Column 6:  SRAD (Solar Radiation, MJ/m²/day)
+  Column 9:  TMXD (Maximum Daily Temperature, °C)
+  Column 10: TMND (Minimum Daily Temperature, °C)
+
+Variables Plotted:
+1. TMAX (maximum temperature) - Red line on primary left y-axis
+   - Direct extraction: TMXD from column 9
+   - Units: degrees Celsius
+   - Plotted as: ax.plot(DAS, TMAX, color='red', linewidth=1.2)
+
+2. TMIN (minimum temperature) - Blue line on primary left y-axis
+   - Direct extraction: TMND from column 10
+   - Units: degrees Celsius
+   - Plotted as: ax.plot(DAS, TMIN, color='blue', linewidth=1.2)
+
+3. PRED (precipitation) - Light blue bars on secondary right y-axis
+   - Direct extraction: PRED from column 3
+   - Units: millimeters
+   - Plotted as: ax2.bar(DAS, PRED, color='skyblue', alpha=0.3, width=1.0)
+
+4. SRAD (solar radiation) - Orange line on tertiary right y-axis
+   - Direct extraction: SRAD from column 6
+   - Units: MJ/m²/day
+   - Plotted as: ax3.plot(DAS, SRAD, color='orange', linewidth=1.0)
+
+Calculations: None (all direct extractions)
+
+Y-axis Configuration:
+  - Primary (left): Temperature in °C (for TMAX and TMIN)
+  - Secondary (right): Precipitation in mm (for PRED)
+  - Tertiary (right, offset): Solar Radiation in MJ/m² (for SRAD)
+
+
+================================================================================
+PANEL B: MEAN DAILY TEMPERATURE
+================================================================================
+
+Purpose: Show seasonal temperature progression
+
+Source File: Weather.OUT
+Section: First run section
+Data Extraction Method: parse_weather_data() function
+
+Column Definitions:
+  Column 2:  DAS  (Days After Sowing)
+  Column 11: TAVD (Average Daily Temperature, °C)
+
+Variable Plotted:
+- TAVD (average temperature)
+  - Direct extraction: TAVD from column 11
+  - Calculation by DSSAT: TAVD = (TMAX + TMIN) / 2
+  - Units: degrees Celsius
+  - Plotted as: Single red line with semi-transparent fill beneath
+  - Plot style: ax.plot(DAS, TMEAN) with ax.fill_between()
+
+Note: Temperature is identical for all treatments (same weather), so only
+one line is plotted rather than 15 overlapping lines.
+
+Y-axis Range: 0 to 28°C (showing full seasonal range)
+
+Reference Lines:
+  - Horizontal line at 15°C (optimal photosynthesis temperature for wheat)
+
+
+================================================================================
+PANEL C: WATER STRESS FACTOR (DAILY)
+================================================================================
+
+Purpose: Show daily water availability status for crop growth
+
+Source File: PlantGro.OUT
+Section: All 15 run sections (*RUN 1 through *RUN 15)
+Data Extraction Method: parse_plantgro_data() function
+
+Column Definitions from PlantGro.OUT (N-Wheat model WHAPS048):
+Header: @YEAR DOY   DAS   DAP...
+  Column 2:  DAS  (Days After Sowing)
+  Column 18: WSPD (Water stress factor for photosynthesis, 0-1 scale)
+  Column 19: WSGD (Water stress factor for grain filling, 0-1 scale)
+  Column 20: SLFT (Soil water factor for leaf expansion, 0-1 scale)
+
+Variable Plotted:
+- daily_water_stress (water stress factor for growth)
+  - Calculation: WFTD = min(WSPD, SLFT)
+  - Formula: df['daily_water_stress'] = df['WFTD']
+  - Where WFTD is calculated during parsing as: min of WSPD and SLFT
+  - Units: dimensionless factor (0 to 1 scale)
+  - Interpretation: 1.0 = no stress (optimal), 0.0 = maximum stress
+  - Plotted for all 15 treatments with different colors
+
+Calculations:
+  Step 1: Extract WSPD (column 18) and SLFT (column 20)
+  Step 2: Calculate WFTD = minimum of (WSPD, SLFT)
+  Step 3: Store as daily_water_stress
+  
+Logic: Water stress for growth is limited by the most limiting factor
+(either photosynthesis restriction or leaf expansion restriction).
+
+Y-axis Range: -0.05 to 1.05 (0-1 scale with small padding)
+
+Reference Lines:
+  - Horizontal line at 1.0 (optimal, green)
+  - Horizontal line at 0.5 (moderate stress, orange)
+
+
+================================================================================
+PANEL D: CUMULATIVE WATER STRESS
+================================================================================
+
+Purpose: Show accumulated water stress over the growing season
+
+Source File: PlantGro.OUT
+Section: All 15 run sections
+Data Extraction Method: parse_plantgro_data() function
+
+Column Definitions: Same as Panel C (columns 18, 19, 20)
+
+Variable Plotted:
+- cumulative_water_stress (accumulated stress days)
+  - Calculation: Cumulative sum of daily stress amounts
+  - Formula: df['cumulative_water_stress'] = (1.0 - df['WFTD']).cumsum()
+  - Units: accumulated stress (dimensionless)
+  - Interpretation: Higher values = more total stress experienced
+  - Plotted for all 15 treatments
+
+Calculations:
+  Step 1: Calculate daily stress amount = (1.0 - WFTD)
+    - When WFTD = 1.0 (no stress), stress amount = 0
+    - When WFTD = 0.0 (max stress), stress amount = 1.0
+  Step 2: Calculate cumulative sum across all days from planting
+  Step 3: Result is running total of stress-days
+
+Logic: This inverts the stress factor so that stress days accumulate.
+If daily_water_stress shows 1=optimal, cumulative shows sum of stress amounts.
+The two panels are consistent representations of the same underlying data.
+
+Y-axis: Automatic scaling based on maximum cumulative value
+
+Title: "Cumulative Water Stress (sum of daily stress)"
+
+
+================================================================================
+PANEL E: NITROGEN STRESS LEVEL (INVERTED SCALE)
+================================================================================
+
+Purpose: Show nitrogen limitation on crop growth (inverted scale for clarity)
+
+Source File: PlantGro.OUT
+Section: All 15 run sections
+Data Extraction Method: parse_plantgro_data() function
+
+Column Definitions from PlantGro.OUT (N-Wheat model):
+  Column 2:  DAS  (Days After Sowing)
+  Column 21: NSTD (Cumulative nitrogen stress, model-specific units)
+
+Variable Plotted:
+- nitrogen_stress_level (nitrogen stress on 0=optimal to 1=stressed scale)
+  - Calculation: Derived from NSTD cumulative stress
+  - Formula: 
+    Step 1: Calculate NFTD (nitrogen stress factor):
+      if NSTD == 0: NFTD = 1.0 (no stress)
+      else: NFTD = max(0.0, 1.0 - (NSTD / 100.0))
+    Step 2: Invert to show stress level:
+      nitrogen_stress_level = 1.0 - NFTD
+  - Units: dimensionless (0 to 1 scale, but typically 0 to 0.015 for N-Wheat)
+  - Interpretation: 0 = optimal nitrogen, higher = more stress
+  - Plotted for all 15 treatments
+
+Calculations:
+  Step 1: Extract NSTD from column 21
+  Step 2: Estimate instantaneous nitrogen factor:
+    NFTD = 1.0 - (NSTD / 100.0) if NSTD > 0, else NFTD = 1.0
+  Step 3: Invert to stress level:
+    nitrogen_stress_level = 1.0 - NFTD
+  Step 4: Result typically ranges 0 to 0.015 (0 to 1.5%)
+
+Note: N-Wheat model shows very minimal nitrogen stress even for unfertilized
+treatments (stress values are 0 to 1.5% rather than 0 to 100%). The panel is
+deliberately zoomed to the 0-1.5% range to make treatment differences visible.
+
+Y-axis Range: -0.001 to 0.015 (zoomed to show 0-1.5% stress range)
+
+Reference Lines:
+  - Horizontal line at 0.0 (optimal, green)
+  - Horizontal line at 0.005 (0.5% stress, orange)
+  - Horizontal line at 0.01 (1.0% stress, red)
+
+Annotation: Text box noting "N-Wheat shows minimal N stress (zoomed to 0-1.5%)"
+
+
+================================================================================
+PANEL F: CUMULATIVE NITROGEN STRESS
+================================================================================
+
+Purpose: Show accumulated nitrogen stress over the growing season
+
+Source File: PlantGro.OUT
+Section: All 15 run sections
+Data Extraction Method: parse_plantgro_data() function
+
+Column Definitions: Same as Panel E (column 21: NSTD)
+
+Variable Plotted:
+- cumulative_nitrogen_stress (accumulated N stress)
+  - Calculation: Cumulative sum of daily nitrogen_stress_level
+  - Formula: df['cumulative_nitrogen_stress'] = df['nitrogen_stress_level'].cumsum()
+  - Units: accumulated stress (dimensionless)
+  - Interpretation: Higher values = more total N limitation experienced
+  - Plotted for all 15 treatments
+
+Calculations:
+  Step 1: Use nitrogen_stress_level calculated in Panel E
+  Step 2: Calculate cumulative sum across all days from planting
+  Step 3: Result is running total of nitrogen stress-days
+
+Logic: Accumulation of daily nitrogen stress levels amplifies small differences
+between treatments, making treatment separation more visible than daily values.
+
+Y-axis: Automatic scaling based on maximum cumulative value
+
+Expected Pattern:
+  - Control and low-N treatments: Higher cumulative stress (10-15 units)
+  - High-N treatments: Lower cumulative stress (2-5 units)
+
+
+================================================================================
+PANEL G: GRAIN YIELD WITH OBSERVED DATA
+================================================================================
+
+Purpose: Show grain yield accumulation and compare with observed harvest data
+
+Source Files:
+  1. PlantGro.OUT (simulated yield time series)
+  2. TUDU1501.WHT (observed yield at harvest)
+
+Data Extraction Methods:
+  1. parse_plantgro_data() for simulated
+  2. parse_observed_data() for observed
+
+SIMULATED DATA:
+Column Definitions from PlantGro.OUT:
+  Column 2: DAS  (Days After Sowing)
+  Column 9: HWAD (Grain weight air-dry, kg/ha) - Also labeled GWAD in some outputs
+
+Variable Plotted (Simulated):
+- HWAD (grain yield)
+  - Direct extraction: HWAD from column 9
+  - Units: kilograms per hectare
+  - Plotted as: Time series lines for all 15 treatments
+  - Yield accumulates from zero during grain filling
+
+OBSERVED DATA:
+Column Definitions from TUDU1501.WHT:
+Header: @TRNO   DATE  HWAD  GWGD  GNAD
+  Column 0: TRNO (Treatment number, 1-15)
+  Column 2: HWAD (Harvest weight air-dry, kg/ha)
+  
+Variable Plotted (Observed):
+- Mean observed yield per treatment
+  - Raw data: Multiple replicate measurements per treatment
+  - Calculation: 
+    Step 1: Group by treatment number
+    Step 2: Calculate mean: np.mean(observed_raw[treatment]['yield'])
+    Step 3: Calculate std dev: np.std(observed_raw[treatment]['yield'])
+  - Plotted as: Colored circles at simulated maturity date (144 DAS)
+  - Error bars: ± 1 standard deviation
+
+Plotting Details:
+  - Simulated: Continuous lines from anthesis to maturity
+  - Observed: Single point per treatment at maturity_das (144 DAS)
+  - Color matching: Each observed circle matches its simulated line color
+  - Circle size: 80 points
+  - Edge color: White (linewidth 1.5) for visibility
+
+Y-axis: Grain Yield (kg/ha), automatic scaling
+
+Legend: Includes notation "circles=observed" for observed points
+
+
+================================================================================
+PANEL H: TOTAL ABOVEGROUND BIOMASS
+================================================================================
+
+Purpose: Show total crop biomass accumulation over time
+
+Source File: PlantGro.OUT
+Section: All 15 run sections
+Data Extraction Method: parse_plantgro_data() function
+
+Column Definitions:
+  Column 2:  DAS  (Days After Sowing)
+  Column 12: CWAD (Total aboveground biomass, dry weight, kg/ha)
+
+Variable Plotted:
+- CWAD (total biomass)
+  - Direct extraction: CWAD from column 12
+  - Units: kilograms per hectare (dry weight)
+  - Includes: Leaves + Stems + Grains
+  - Plotted for all 15 treatments
+
+Calculations: None (direct extraction)
+
+Expected Pattern:
+  - Increases through vegetative growth
+  - Peaks around anthesis (day 97)
+  - May decline slightly during grain fill as leaves senesce
+  - Final values: 6,500 to 13,400 kg/ha depending on N treatment
+
+Y-axis: Biomass (kg/ha), automatic scaling
+
+
+================================================================================
+PANEL I: HARVEST INDEX
+================================================================================
+
+Purpose: Show partitioning of biomass to grain over time
+
+Source File: PlantGro.OUT
+Section: All 15 run sections
+Data Extraction Method: parse_plantgro_data() function
+
+Column Definitions:
+  Column 2:  DAS  (Days After Sowing)
+  Column 16: HIAD (Harvest index air-dry, ratio)
+
+Variable Plotted:
+- HIAD (harvest index)
+  - Direct extraction: HIAD from column 16
+  - Calculation by model: HIAD = HWAD / CWAD
+  - Units: dimensionless ratio (0 to 1, typically 0.3 to 0.5)
+  - Interpretation: Proportion of total biomass that is grain
+  - Plotted for all 15 treatments
+
+Calculations: None needed (model provides calculated value)
+
+Expected Pattern:
+  - Zero before anthesis (no grain yet)
+  - Increases sigmoidally during grain filling
+  - Stabilizes at maturity
+  - Control/low-N: Lower HI (0.35-0.38)
+  - High-N: Higher HI (0.42-0.48)
+
+Y-axis: Harvest Index (0-1), automatic scaling
+
+
+================================================================================
+PANEL J: GRAIN NUMBER PER SQUARE METER
+================================================================================
+
+Purpose: Show grain sites established at anthesis
+
+Source File: PlantGro.OUT
+Section: All 15 run sections
+Data Extraction Method: parse_plantgro_data() function
+
+Column Definitions:
+  Column 2:  DAS  (Days After Sowing)
+  Column 13: H#AD (Grain number per area, grains/m²) - Also labeled G#AD
+
+Variable Plotted:
+- H#AD (grain number)
+  - Direct extraction: H#AD from column 13
+  - Units: grains per square meter
+  - Plotted for all 15 treatments
+
+Calculations: None (direct extraction)
+
+Expected Pattern:
+  - Established around anthesis (day 97)
+  - Remains essentially constant through maturity
+  - Control: ~18,000 grains/m²
+  - High-N: ~38,000-40,000 grains/m²
+  - Grain number is primary determinant of yield potential
+
+Y-axis: Grains/m², automatic scaling
+
+
+================================================================================
+PANEL K: INDIVIDUAL GRAIN WEIGHT WITH OBSERVED DATA
+================================================================================
+
+Purpose: Show kernel size development and compare with observed measurements
+
+Source Files:
+  1. PlantGro.OUT (simulated grain weight time series)
+  2. TUDU1501.WHT (observed grain weight at harvest)
+
+Data Extraction Methods:
+  1. parse_plantgro_data() for simulated
+  2. parse_observed_data() for observed
+
+SIMULATED DATA:
+Column Definitions from PlantGro.OUT (N-Wheat model WHAPS048):
+  Column 2:  DAS  (Days After Sowing)
+  Column 15: GWGD (Grain weight per grain, mg/grain) - CRITICAL: Direct output!
+
+Variable Plotted (Simulated):
+- grain_size_mg (individual kernel weight)
+  - For N-Wheat: Direct extraction from GWGD (column 15)
+  - Formula: df['grain_size_mg'] = df['GWGD']
+  - Units: milligrams per grain
+  - Plotted for all 15 treatments
+
+IMPORTANT NOTE: For N-Wheat model, grain weight is directly provided in the
+output file (column 15). The script uses this direct value rather than
+calculating from yield divided by grain number, which is the correct approach.
+
+OBSERVED DATA:
+Column Definitions from TUDU1501.WHT:
+  Column 0: TRNO (Treatment number)
+  Column 3: GWGD (Grain weight per grain, mg/grain)
+
+Variable Plotted (Observed):
+- Mean observed grain weight per treatment
+  - Raw data: Multiple replicate measurements per treatment
+  - Calculation:
+    Step 1: Group by treatment number
+    Step 2: Calculate mean: np.mean(observed_raw[treatment]['grain_weight'])
+    Step 3: Calculate std dev: np.std(observed_raw[treatment]['grain_weight'])
+  - Plotted as: Colored circles at maturity_das (144 DAS)
+  - Error bars: ± 1 standard deviation
+
+Plotting Details:
+  - Simulated: Lines showing grain filling progression
+  - Observed: Single point per treatment at maturity
+  - Color matching: Observed circles match simulated line colors
+  - Note: Observed values remarkably consistent (41-44 mg/grain)
+
+Y-axis: mg/grain, automatic scaling
+
+
+================================================================================
+PANEL L: ROOT DEPTH PROGRESSION
+================================================================================
+
+Purpose: Show root system vertical development
+
+Source File: PlantGro.OUT
+Section: All 15 run sections
+Data Extraction Method: parse_plantgro_data() function
+
+Column Definitions:
+  Column 2:  DAS  (Days After Sowing)
+  Column 34: RDPD (Root depth, cm)
+
+Variable Plotted:
+- RDPD (root depth)
+  - Direct extraction: RDPD from column 34
+  - Units: centimeters
+  - Plotted for all 15 treatments
+
+Calculations: None (direct extraction)
+
+Expected Pattern:
+  - Rapid early increase
+  - Reaches 100-120 cm by anthesis
+  - Stabilizes during grain fill
+  - Final depth: 100-120 cm (limited by soil profile depth)
+
+Y-axis: Root Depth (cm), automatic scaling
+
+Note: No observed data available for validation
+
+
+================================================================================
+PANEL M: GRAIN NITROGEN WITH OBSERVED DATA
+================================================================================
+
+Purpose: Show nitrogen accumulation in grain and compare with observed
+
+Source Files:
+  1. PlantN.OUT (simulated grain nitrogen time series)
+  2. TUDU1501.WHT (observed grain nitrogen at harvest)
+
+Data Extraction Methods:
+  1. parse_nitrogen_data() for simulated
+  2. parse_observed_data() for observed
+
+SIMULATED DATA:
+Column Definitions from PlantN.OUT:
+Header: @YEAR DOY   DAS   DAP  CNAD  GNAD  GN%D...
+  Column 2: DAS  (Days After Sowing)
+  Column 4: CNAD (Total crop nitrogen: leaves+stems+grains, kg N/ha)
+  Column 5: GNAD (Grain nitrogen only, kg N/ha) - CRITICAL: Use this column!
+
+Variable Plotted (Simulated):
+- nitrogen_uptake (stored as GNAD for comparison)
+  - Direct extraction: GNAD from column 5
+  - Formula: nitrogen_uptake = GNAD (not CNAD!)
+  - Units: kilograms nitrogen per hectare
+  - Plotted for all 15 treatments
+
+CRITICAL NOTE: The observed data measures grain nitrogen at harvest (nitrogen
+in harvested grain), NOT total crop nitrogen (which includes straw). Therefore,
+we must use GNAD (column 5, grain N only) not CNAD (column 4, total crop N)
+for proper comparison. Using CNAD would overestimate by including vegetative
+nitrogen that was not harvested.
+
+OBSERVED DATA:
+Column Definitions from TUDU1501.WHT:
+  Column 0: TRNO (Treatment number)
+  Column 4: GNAD (Grain nitrogen, kg N/ha)
+
+Variable Plotted (Observed):
+- Mean observed grain nitrogen per treatment
+  - Raw data: Multiple replicate measurements per treatment
+  - Calculation:
+    Step 1: Group by treatment number
+    Step 2: Calculate mean: np.mean(observed_raw[treatment]['grain_nitrogen'])
+    Step 3: Calculate std dev: np.std(observed_raw[treatment]['grain_nitrogen'])
+  - Plotted as: Colored circles at maturity_das (144 DAS)
+  - Error bars: ± 1 standard deviation
+
+Calculations (simulated):
+  - GNAD extracted directly from PlantN.OUT column 5
+  - Represents nitrogen translocated into grains plus late-season uptake
+  - Increases during grain fill as N remobilizes from leaves/stems
+
+Plotting Details:
+  - Simulated: Lines showing grain N accumulation over time
+  - Observed: Single point per treatment at maturity
+  - Color matching: Observed circles match simulated line colors
+  - Y-axis: Grain N (kg/ha), automatic scaling
+
+Expected Pattern:
+  - Control: ~50-70 kg N/ha (simulated), ~72 kg N/ha (observed)
+  - High-N: ~160 kg N/ha (simulated), ~200 kg N/ha (observed)
+
+
+================================================================================
+PANEL N: PHENOLOGY TIMELINE FOR ALL TREATMENTS
+================================================================================
+
+Purpose: Show timing of major developmental stages for all treatments
+
+Source File: Summary.OUT
+Section: Summary data section (one row per treatment)
+Data Extraction Method: parse_summary_phenology() function
+
+Column Definitions from Summary.OUT:
+(Summary.OUT is a wide table with ~90 columns. Key columns for phenology:)
+  Column 1:  TRNO  (Treatment number)
+  Column 16: SDAT  (Sowing date, year+DOY format e.g., 15077)
+  Column 17: PDAT  (Planting date, year+DOY)
+  Column 18: EDAT  (Emergence date, year+DOY)
+  Column 19: ADAT  (Anthesis date, year+DOY)
+  Column 20: MDAT  (Maturity date, year+DOY)
+  Column 21: HDAT  (Harvest date, year+DOY)
+
+Variables Plotted:
+- Emergence (squares), Anthesis (triangles), Maturity (diamonds)
+  - Extraction: EDAT, ADAT, MDAT from columns 18, 19, 20
+  - Conversion to DAS (Days After Sowing):
+    Formula: DAS = (DATE % 1000) - (SDAT % 1000)
+    Example: EDAT=15089, SDAT=15077 → (89 - 77) = 12 DAS
+  - Result: emergence_das, anthesis_das, maturity_das
+  - Plotted as scatter points for each treatment (15 rows, one per treatment)
+
+Calculations:
+  Step 1: Extract SDAT, EDAT, ADAT, MDAT for each treatment
+  Step 2: Convert from year+DOY to days after sowing:
+    emergence_das = (EDAT % 1000) - (SDAT % 1000)
+    anthesis_das = (ADAT % 1000) - (SDAT % 1000)
+    maturity_das = (MDAT % 1000) - (SDAT % 1000)
+  Step 3: Handle year boundary if needed (add 365 if date_doy < sdate_doy)
+
+Plotting Style:
+  - Y-axis: Treatment names (vertical list)
+  - X-axis: Days after sowing (0 to 170)
+  - Markers:
+    * Circle at 0: Planting
+    * Square: Emergence (typically day 12)
+    * Triangle: Anthesis (typically day 97)
+    * Diamond: Maturity (typically day 144-147)
+  - Line connecting planting to maturity for each treatment
+  - Colors: Match treatment colors used in other panels
+
+Reference Line:
+  - Red vertical dashed line at 160 DAS (observed harvest, DOY 237)
+  - Label: "Observed Harvest (DOY 237, 160 DAS)"
+
+Interpretation:
+  - Simulated maturity: 144-147 DAS
+  - Observed harvest: 160 DAS
+  - Difference: Crop matures 13-16 days early in simulation
+
+
+================================================================================
+PANEL O: SIMULATED VS OBSERVED YIELDS (BAR CHART)
+================================================================================
+
+Purpose: Direct side-by-side comparison of final yields
+
+Source Files:
+  1. PlantGro.OUT (final simulated yield from last day)
+  2. TUDU1501.WHT (observed mean yield per treatment)
+
+Data Extraction Methods:
+  1. From treatments_data dictionary: HWAD.iloc[-1] (last value)
+  2. From observed_data dictionary: mean yield per treatment
+
+Variables Plotted:
+- Simulated yield (one bar per treatment)
+  - Extraction: Final value of HWAD from PlantGro time series
+  - Formula: simulated_yield = treatments_data[trt_name]['HWAD'].iloc[-1]
+  - Units: kg/ha
+  
+- Observed yield (one bar per treatment)
+  - Extraction: Mean calculated yield from TUDU1501.WHT
+  - Formula: observed_yield = observed_data[trt_name]['yield']
+  - Units: kg/ha
+
+Calculations:
+  Step 1: Extract final simulated yield (last day value)
+  Step 2: Get observed mean yield (pre-calculated)
+  Step 3: Calculate error percentage:
+    error_pct = ((simulated - observed) / observed) * 100
+  Step 4: Format as "+X%" or "-X%" text label
+
+Plotting Style:
+  - X-axis: Treatment numbers (1-15)
+  - Y-axis: Yield (kg/ha)
+  - Two bars per treatment:
+    * Observed: Semi-transparent, treatment color
+    * Simulated: More opaque, same treatment color
+  - Error percentage label above each pair
+  - Bar width: 0.4 (allowing two bars side-by-side)
+  - Bar positions: treatment_index - 0.2 (observed), +0.2 (simulated)
+
+Expected Values:
+  - Observed: 3,500 to 8,200 kg/ha
+  - Simulated: 2,300 to 4,600 kg/ha
+  - Error: -30% to -57% (systematic underestimation)
+
+
+================================================================================
+PANEL P: NITROGEN RESPONSE CURVE
+================================================================================
+
+Purpose: Show yield response to nitrogen application rate
+
+Source Files:
+  1. PlantGro.OUT (final simulated yields)
+  2. TUDU1501.WHT (observed mean yields)
+  3. Summary.OUT (nitrogen application amounts via n_levels dictionary)
+
+Data Extraction Methods:
+  1. Final HWAD values from PlantGro.OUT
+  2. Mean yields from observed_data
+  3. N application amounts from parse_summary_phenology()
+
+Variables Plotted:
+- X-axis: Total nitrogen applied (0, 120, 180 kg N/ha)
+- Y-axis: Mean grain yield (kg/ha)
+
+Nitrogen Application Data:
+Source: Summary.OUT column 50 (NICM - Nitrogen applied inorganic, kg/ha)
+Extraction: parse_summary_phenology() function reads NICM for each treatment
+Storage: n_levels dictionary mapping treatment number to N amount
+Unique levels: 0 kg/ha (treatment 15), 120 kg/ha (treatments 2,3,5,6,9,11,13),
+               180 kg/ha (treatments 1,4,7,8,10,12,14)
+
+Calculations:
+  Step 1: Group treatments by nitrogen level
+    For each unique N level (0, 120, 180):
+      - Collect all treatment yields at that N level
+      - Calculate mean yield across formulations
+  
+  Step 2: Calculate means for simulated data
+    n_levels_sim = {0: [yields], 120: [yields], 180: [yields]}
+    sim_means = [mean of each level]
+  
+  Step 3: Calculate means for observed data
+    n_levels_obs = {0: [yields], 120: [yields], 180: [yields]}
+    obs_means = [mean of each level]
+  
+  Step 4: Calculate Fertilizer Use Efficiency (FUE)
+    FUE = (yield at N1 - yield at N0) / (N1 - N0)
+    Example: FUE_sim = (4200 - 2300) / (120 - 0) = 15.8 kg grain / kg N
+
+Plotting Style:
+  - Simulated: Blue circles connected by lines
+  - Observed: Green squares connected by lines
+  - Marker size: 8 points
+  - Line width: 1.8
+  - FUE annotation: Text box showing simulated FUE value
+
+Expected Pattern:
+  - Observed: Strong linear response (no plateau at 180 kg N)
+  - Simulated: Weaker response with plateau tendency
+  - FUE observed: ~26 kg/kg
+  - FUE simulated: ~13 kg/kg (51% lower than observed)
+
+
+================================================================================
+ADDITIONAL PROCESSING DETAILS
+================================================================================
+
+Temperature Data Integration:
+  - PlantGro.OUT from N-Wheat does not contain temperature values
+  - Temperature merged from Weather.OUT during PlantGro parsing
+  - Method: Create dictionary mapping DAS to TAVD from Weather.OUT
+  - Lookup: For each DAS in PlantGro, add TMEAN = weather_data[das]
+  - Fallback: If DAS not found, use default 15.0°C
+
+Treatment Naming Convention:
+  - Format: "TrtN:FertType-XkgN" where N is treatment number
+  - Fertilizer types: Harnstoff, AmmonSulf, Kalkamm, UAN, Control, Mixed
+  - Example: "Trt1:Harnstoff-180N" (Treatment 1, urea, 180 kg N/ha)
+  - Problem treatments marked with asterisk: "Trt3:Mixed-120N*"
+  - Nitrogen amounts extracted from Summary.OUT column 50 (NICM)
+
+Color Coding:
+  - 15 distinct colors from matplotlib tab20 colormap
+  - Control (treatment 15): Black, dotted line, thicker (linewidth 2.0)
+  - Problem treatments (3, 10): Dashed lines with 'x' markers
+  - Normal treatments: Solid thin lines (linewidth 0.9)
+  - All treatments: alpha=0.7 for transparency
+
+Phenology Markers on Time Series Panels:
+  - Vertical dashed lines at emergence (12 DAS), anthesis (97 DAS), 
+    maturity (144 DAS)
+  - Colors: Green (emergence), Deep pink (anthesis), Orange (maturity)
+  - Applied to panels: b through m (all time-series panels)
+  - Not applied to: weather, special panels (n, o, p)
+
+X-axis Consistency:
+  - All time-series panels: 0 to 150 DAS range
+  - Explicit tick marks at: 0, 12 (emergence), 20, 40, 60, 80, 
+    97 (anthesis), 120, 144 (maturity)
+  - Label: "Days After Planting (DAS)"
+  - Exception: Special panels (n, o, p) have custom x-axes
+
+
+================================================================================
+FILE FORMAT SPECIFICATIONS
+================================================================================
+
+PlantGro.OUT Structure:
+  - File organized by runs (*RUN 1, *RUN 2, ... *RUN 15)
+  - Each run has header line: @YEAR DOY   DAS   DAP...
+  - Daily data rows follow header until next *RUN marker
+  - N-Wheat model (WHAPS048): 35 columns
+
+PlantN.OUT Structure:
+  - Same run-based organization as PlantGro.OUT
+  - Header: @YEAR DOY   DAS   DAP  CNAD  GNAD  GN%D...
+  - CNAD (column 4): Total crop N (leaves + stems + grains)
+  - GNAD (column 5): Grain N only (for harvest comparison)
+  - Daily records from emergence through maturity
+
+Weather.OUT Structure:
+  - Run-based organization (but weather identical for all runs)
+  - Header: @YEAR DOY   DAS   PRED  DAYLD   TWLD   SRAD   PARD   CLDD   TMXD   TMND   TAVD...
+  - 21+ columns including all weather variables
+  - Daily records covering entire simulation period
+
+Summary.OUT Structure:
+  - Single table with all treatments (no run sections)
+  - Header spanning 2 lines defining ~90 column names
+  - One data row per treatment
+  - Columns: dates, yields, components, fluxes, balances
+
+TUDU1501.WHT Structure:
+  - Header: @TRNO   DATE  HWAD  GWGD  GNAD
+  - Data rows: Treatment number, observation date, yield, grain weight, grain N
+  - Multiple replicate rows per treatment (4-8 replicates)
+  - Units: HWAD (kg/ha), GWGD (mg/grain), GNAD (kg N/ha)
+
+
+================================================================================
+QUALITY ASSURANCE NOTES
+================================================================================
+
+Column Index Verification (CRITICAL FIXES):
+  1. Temperature columns in Weather.OUT:
+     - CORRECTED: Now using columns 9 (TMXD) and 10 (TMND)
+     - Previously: Used wrong columns, causing smoothed/incorrect temperature
+  
+  2. Solar radiation in Weather.OUT:
+     - CORRECTED: Now using column 6 (SRAD)
+     - Previously: May have used wrong column
+  
+  3. Grain nitrogen in PlantN.OUT:
+     - CORRECTED: Now using column 5 (GNAD - grain N only)
+     - Previously: Confusion between CNAD (total) and GNAD (grain)
+  
+  4. Grain weight in PlantGro.OUT:
+     - CORRECTED: Now using column 15 (GWGD) directly for N-Wheat
+     - Previously: Calculated from yield/number, compounding errors
+  
+  5. Water stress cumulative:
+     - CORRECTED: Now calculating as (1 - factor).cumsum()
+     - Previously: Summed factors directly (wrong interpretation)
+
+These corrections were implemented following professor feedback on October 27, 2025.
+
+
+================================================================================
+SCRIPT EXECUTION SUMMARY
+================================================================================
+
+Main Function Flow:
+  1. Check required files exist (Summary.OUT, PlantGro.OUT, etc.)
+  2. Parse phenology and N levels from Summary.OUT
+  3. Parse plant growth data from PlantGro.OUT (merge with Weather.OUT temp)
+  4. Parse nitrogen data from PlantN.OUT
+  5. Parse weather data from Weather.OUT
+  6. Parse observed data from TUDU1501.WHT
+  7. Create 16 subplot figure (18" × 48" at 300 DPI)
+  8. Generate each panel sequentially
+  9. Add phenology markers to time-series panels
+  10. Save as PNG (3.3 MB) and PDF (100-105 KB)
+
+Output Files:
+  - duernast_2015_comprehensive_analysis.png (high resolution, 3306760 bytes)
+  - duernast_2015_comprehensive_analysis.pdf (vector format, ~105000 bytes)
+
+Total Execution Time: Approximately 10-15 seconds
+
+Python Dependencies:
+  - pandas: Data manipulation and DataFrame operations
+  - numpy: Numerical calculations and array operations
+  - matplotlib.pyplot: All plotting and figure generation
+  - seaborn: Color palettes and styling
+  - pathlib: File path operations
+  - re: Regular expressions for parsing run sections
+
+
+================================================================================
+END OF TECHNICAL DOCUMENTATION
+================================================================================
+
+Document Version: 1.0
+Date Created: October 27, 2025
+Model: N-Wheat (WHAPS048)
+Corresponding Script: create_duernast_visualizations.py
+Output Visualization: duernast_2015_comprehensive_analysis.png/.pdf
+
+================================================================================
