@@ -263,10 +263,10 @@ def compare_hargreaves_vs_nasa(wth_file_backup, wth_file_nasa):
             print(f"  Difference:          {difference:+.2f} MJ/m²/day ({percent_diff:+.1f}%)")
             
             if percent_diff > 0:
-                print(f"\n✅ NASA POWER radiation is HIGHER by {percent_diff:.1f}%")
+                print(f"\n NASA POWER radiation is HIGHER by {percent_diff:.1f}%")
                 print(f"   → Expected yield increase: ~{percent_diff*1.3:.1f}% to {percent_diff*1.6:.1f}%")
             else:
-                print(f"\n⚠️  NASA POWER radiation is LOWER by {abs(percent_diff):.1f}%")
+                print(f"\n  NASA POWER radiation is LOWER by {abs(percent_diff):.1f}%")
                 print(f"   → Expected yield decrease: ~{abs(percent_diff)*1.3:.1f}% to {abs(percent_diff)*1.6:.1f}%")
     
     except Exception as e:
